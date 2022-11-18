@@ -4,7 +4,7 @@ const Login = () => {
   return (
     <div className="md:container justify-center flex fixed mt-40 mb-40 h-screen">
       <div className="bg-verde-insted grid gap-0 grid-cols-1 grid-rows-5 justify-center rounded-xl h-3/5 ml-12 w-80">
-        <div className="bg-logo-insted bg-contain bg-no-repeat h-24 w-full mt-5 ml-2"></div>
+        <div className="bg-logo-insted bg-contain bg-no-repeat h-24 w-full mt-7 ml-3"></div>
         <div className="w-full justify-center flex mt-20">
           <input
             type="text"
