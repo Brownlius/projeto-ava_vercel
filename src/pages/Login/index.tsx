@@ -1,51 +1,15 @@
+import Input from './components/Input';
+
 const Login = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="bg-verde-insted grid gap-0 grid-cols-1 grid-rows-5 place-content-center rounded-xl h-3/5 w-4/5">
         <div className="bg-logo-insted bg-contain bg-center bg-no-repeat h-4/5 w-4/5 mx-auto mt-auto"></div>
         <div className="w-full justify-center flex mt-20">
-          <input
-            type="text"
-            placeholder=" Informe seu RA"
-            className="flex
-              justify-center
-              items-center
-              mx-auto
-              w-4/5
-              h-8
-              text-md
-              text-white
-              bg-verde-insted
-              placeholder:text-white
-              border-white
-              hover:placeholder:opacity-0
-              focus:outline-none
-              focus:
-              border-solid
-              border-b"
-          />
+          <Input type={'text'} placeholder={' Informe seu RA'} />
         </div>
         <div className="w-full justify-center flex mt-10">
-          <input
-            type="password"
-            placeholder=" Informe sua senha"
-            className="flex
-              justify-center
-              items-center
-              mx-auto
-              w-4/5
-              h-8
-              text-md
-              text-white
-              bg-verde-insted
-              placeholder:text-white
-              border-white
-              hover:placeholder:opacity-0
-              focus:outline-none
-              focus:
-              border-solid
-              border-b"
-          />
+          <Input type={'password'} placeholder={' Informe sua senha'} />
         </div>
         <div className="w-full flex justify-center items-center mt-8 h-8">
           <button className="bg-white shadow-md text-verde-insted text-xl h-12 w-40 rounded-3xl">
