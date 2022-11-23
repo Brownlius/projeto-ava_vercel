@@ -12,9 +12,11 @@ const Login = () => {
           <Input type={'password'} placeholder={' Informe sua senha'} />
         </div>
         <div className="w-full flex justify-center items-center mt-8 h-8">
-          <button className="bg-white shadow-md text-verde-insted text-xl h-12 w-40 rounded-3xl">
-            LOGIN
-          </button>
+          <a href="/home">
+            <button className="bg-white shadow-md text-verde-insted text-xl h-12 w-40 rounded-3xl">
+              LOGIN
+            </button>
+          </a>
         </div>
         <div className="flex justify-center items-center w-full">
           <input type="checkbox" className="mx-1" />

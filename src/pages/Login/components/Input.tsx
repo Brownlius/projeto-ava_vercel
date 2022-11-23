@@ -22,7 +22,6 @@ const Input = ({ type, placeholder }: InputProps) => {
         border-white
         hover:placeholder:opacity-0
         focus:outline-none
-        focus:
         border-solid
         border-b"
     />

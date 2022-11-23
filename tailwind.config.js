@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'background-login': "url('./images/background-login.jpg')",
-        'logo-insted': "url('./images/logo-insted.png')"
+        'background-login': "url('../public/images/background-login.jpg')",
+        'logo-insted': "url('../public/images/logo-insted.png')"
       },
       colors: {
         'verde-insted': '#139FA3'
