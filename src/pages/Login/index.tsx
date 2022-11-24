@@ -1,3 +1,4 @@
+import Button from '../../components/Button/button';
 import Input from './components/Input';
 
 const Login = () => {
@@ -13,9 +14,10 @@ const Login = () => {
         </div>
         <div className="w-full flex justify-center items-center mt-8 h-8">
           <a href="/home">
-            <button className="bg-white shadow-md text-verde-insted text-xl h-12 w-40 rounded-3xl">
-              LOGIN
-            </button>
+            <Button
+              className="bg-white shadow-md text-verde-insted text-xl h-12 w-40 rounded-3xl"
+              label="LOGIN"
+            />
           </a>
         </div>
         <div className="flex justify-center items-center w-full">
