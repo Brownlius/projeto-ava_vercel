@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <Header />
       <main className="container flex flex-wrap justify-center mt-24 h-screen">
-        <div className="bg-verde-insted w-11/12 h-auto flex-wrap rounded-md">
+        <div className="bg-verde-insted w-full h-auto flex-wrap rounded-sm mx-2 my-3">
           <h1 className="text-xl text-white ml-3 my-1">Avisos</h1>
           <img
             src="/images/painel-infos.jpg"
@@ -14,7 +14,7 @@ const Home = () => {
             className="w-full h-auto pb-4 px-1"
           />
         </div>
-        <div className="container bg-verde-insted w-11/12 h-1/3 flex-wrap rounded-md mt-4">
+        <div className="container bg-verde-insted w-full mx-2 h-1/3 flex-wrap rounded-sm">
           <h1 className="text-xl text-white ml-3 my-1">Horários</h1>
           <div className="container flex flex-wrap justify-center">
             <div className="bg-white w-full mx-1 p-1 rounded-md">
