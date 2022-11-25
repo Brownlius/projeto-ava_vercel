@@ -8,7 +8,7 @@ const Footer = () => {
         <img src="/images/calendar-icon.png" alt="Calendar button" width={25} />
       </div>
       <div className="justify-center items-center flex">
-        <img src="/images/clock-icon.png" alt="Clock button" width={25} />
+        <img src="/images/relogio-icon.png" alt="Clock button" width={40} height={40} />
       </div>
       <div className="justify-center items-center flex">
         <img src="/images/stats-icon.png" alt="Stats button" width={25} />

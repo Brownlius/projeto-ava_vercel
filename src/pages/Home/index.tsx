@@ -1,12 +1,15 @@
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import SubjectPost from './components/subjectPost';
 
 const Home = () => {
   return (
     <>
       <Header />
-      <main className="container flex flex-wrap justify-center mt-24 h-screen">
-        <div className="bg-verde-insted w-full h-auto flex-wrap rounded-sm mx-2 my-3">
+
+      <main className="flex flex-wrap justify-center items-center mt-20 pt-2 h-screen overflow-auto">
+        <div className="bg-verde-insted w-11/12 h-auto flex-wrap rounded-md">
+
           <h1 className="text-xl text-white ml-3 my-1">Avisos</h1>
           <img
             src="/images/painel-infos.jpg"
@@ -14,16 +17,40 @@ const Home = () => {
             className="w-full h-auto pb-4 px-1"
           />
         </div>
-        <div className="container bg-verde-insted w-full mx-2 h-1/3 flex-wrap rounded-sm">
+
+        <div className="bg-verde-insted w-11/12 h-2/5 flex-wrap rounded-md pb-0.5 mt-4">
+
           <h1 className="text-xl text-white ml-3 my-1">Horários</h1>
-          <div className="container flex flex-wrap justify-center">
-            <div className="bg-white w-full mx-1 p-1 rounded-md">
-              <div className="">
-                <img src="/images/relogio-icon-laranja.png" alt="Relógio" className="w-6 h-6" />
-                <h1> - 19:00</h1>
-              </div>
-            </div>
-          </div>
+          <section className="flex justify-center h-26/30">
+            <nav className="flex overflow-auto ">
+              <ul className="flex flex-wrap gap-3">
+                <SubjectPost
+                  hour="19:00"
+                  subject="Projeto Integrador II"
+                  teacher="Ana Cláudia Pedro Ândreo"
+                />
+                <SubjectPost
+                  hour="19:50"
+                  subject="Projeto Integrador II"
+                  teacher="Ana Cláudia Pedro Ândreo"
+                />
+                <div className="bg-white w-full flex-wrap h-1/3 rounded-md mx-1 grid grid-rows-1 grid-cols-3">
+                  <div className="justify-center items-center flex col-span-1">
+                    <img src="/images/relogio-icon-laranja.png" alt="" className="w-5 h-7 pt-2" />
+                    <h1 className="pt-2 pl-1.5"> - 20:40</h1>
+                  </div>
+                  <div className="pl-2 border-l-2 my-2 border-slate-600 justify-center flex items-center col-span-2">
+                    <div className="text-2xl">Intervalo</div>
+                  </div>
+                </div>
+                <SubjectPost
+                  hour="21:00"
+                  subject="Projeto Integrador II"
+                  teacher="Ana Cláudia Pedro Ândreo"
+                />
+              </ul>
+            </nav>
+          </section>
         </div>
         <div className="bg-verde-insted w-11/12 h-1/3 flex-wrap rounded-md mt-4"></div>
         <div className="bg-verde-insted w-11/12 h-1/3 flex-wrap rounded-md mt-4"></div>

@@ -9,6 +9,11 @@ module.exports = {
       },
       colors: {
         'verde-insted': '#139FA3'
+      },
+      spacing: {
+        '17/20': '85%',
+        '9/10': '90%',
+        '26/30': '87.5%'
       }
     }
   },
