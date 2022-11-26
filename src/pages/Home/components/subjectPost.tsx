@@ -6,7 +6,7 @@ interface Props {
 
 const SubjectPost = ({ hour, subject, teacher }: Props) => {
   return (
-    <li className="bg-white w-full flex-wrap justify-between h-1/3 rounded-md mx-1 grid grid-rows-1 grid-cols-3">
+    <li className="bg-white w-full flex-wrap justify-between h-1/4 rounded-sm mx-1 my-2 grid grid-rows-1 grid-cols-3">
       <div className="justify-center items-center flex col-span-1">
         <img src="/images/relogio-icon-laranja.png" alt="" className="w-5 h-7 pt-2" />
         <h1 className="pt-2 pl-1.5"> - {hour}</h1>

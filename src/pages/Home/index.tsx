@@ -7,10 +7,11 @@ const Home = () => {
     <>
       <Header />
 
-      <main className="flex flex-wrap justify-center items-center mt-20 pt-2 h-screen overflow-auto">
+      <main className="flex flex-wrap justify-center items-center mt-20 h-screen overflow-auto">
         <div className="bg-verde-insted w-11/12 h-auto flex-wrap rounded-md">
-
-          <h1 className="text-xl text-white ml-3 my-1">Avisos</h1>
+          <div>
+            <h1 className="text-xl text-white ml-3 my-1">Avisos</h1>
+          </div>
           <img
             src="/images/painel-infos.jpg"
             alt="Painel de informação"
@@ -18,12 +19,13 @@ const Home = () => {
           />
         </div>
 
-        <div className="bg-verde-insted w-11/12 h-2/5 flex-wrap rounded-md pb-0.5 mt-4">
-
-          <h1 className="text-xl text-white ml-3 my-1">Horários</h1>
-          <section className="flex justify-center h-26/30">
-            <nav className="flex overflow-auto ">
-              <ul className="flex flex-wrap gap-3">
+        <div className="bg-verde-insted w-11/12 h-1/5 flex flex-col rounded-md mt-4">
+          <div>
+            <h1 className="text-xl text-white ml-3 my-1">Horários</h1>
+          </div>
+          <section className=" flex overflow-auto">
+            <nav>
+              <ul className="flex flex-wrap">
                 <SubjectPost
                   hour="19:00"
                   subject="Projeto Integrador II"
@@ -34,7 +36,7 @@ const Home = () => {
                   subject="Projeto Integrador II"
                   teacher="Ana Cláudia Pedro Ândreo"
                 />
-                <div className="bg-white w-full flex-wrap h-1/3 rounded-md mx-1 grid grid-rows-1 grid-cols-3">
+                <div className="bg-white w-full h-1/4 flex-wrap rounded-sm mx-1 grid grid-cols-3">
                   <div className="justify-center items-center flex col-span-1">
                     <img src="/images/relogio-icon-laranja.png" alt="" className="w-5 h-7 pt-2" />
                     <h1 className="pt-2 pl-1.5"> - 20:40</h1>
