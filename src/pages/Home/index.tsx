@@ -7,17 +7,20 @@ const Home = () => {
     <>
       <Header />
 
+
       <main className="flex flex-wrap justify-center items-center mt-16 pt-4 pb-16 h-screen overflow-auto">
         <div className="bg-verde-insted w-screen mx-2 h-auto flex-wrap rounded-md">
           <div>
             <h1 className="text-xl text-white mx-3 my-1">Avisos</h1>
           </div>
+
           <img
             src="/images/painel-infos.jpg"
             alt="Painel de informação"
             className="w-full h-auto pb-4 px-1"
           />
         </div>
+
 
         <div className="bg-verde-insted w-screen mx-2 h-1/6 flex flex-col rounded-md mt-4 p-1">
           <div className="flex justify-between">
@@ -27,6 +30,7 @@ const Home = () => {
           <section className=" flex overflow-auto">
             <nav>
               <ul className="flex flex-wrap">
+
                 <SubjectPost
                   hour="19:00"
                   subject="Projeto Integrador II"
