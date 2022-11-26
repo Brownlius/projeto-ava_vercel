@@ -10,7 +10,7 @@ const Home = () => {
       <main className="flex flex-wrap justify-center items-center mt-16 pt-4 pb-16 h-screen overflow-auto">
         <div className="bg-verde-insted w-screen mx-2 h-auto flex-wrap rounded-md">
           <div>
-            <h1 className="text-xl text-white ml-3 my-1">Avisos</h1>
+            <h1 className="text-xl text-white mx-3 my-1">Avisos</h1>
           </div>
           <img
             src="/images/painel-infos.jpg"
@@ -19,9 +19,10 @@ const Home = () => {
           />
         </div>
 
-        <div className="bg-verde-insted w-screen mx-2 h-1/6 flex flex-col rounded-md mt-4">
-          <div>
-            <h1 className="text-xl text-white ml-3 my-1">Horários</h1>
+        <div className="bg-verde-insted w-screen mx-2 h-1/6 flex flex-col rounded-md mt-4 p-1">
+          <div className="flex justify-between">
+            <h1 className="text-xl text-white mx-3 my-1">Horários</h1>
+            <h2 className="mx-3 my-1 font-semibold">Quarta-Feira</h2>
           </div>
           <section className=" flex overflow-auto">
             <nav>
@@ -54,7 +55,27 @@ const Home = () => {
             </nav>
           </section>
         </div>
-        <div className="bg-verde-insted w-screen mx-2 h-1/3 flex-wrap rounded-md mt-4"></div>
+        <div className="bg-verde-insted w-screen mx-2 h-auto flex-wrap rounded-md mt-4">
+          <div>
+            <h1 className="text-xl text-white ml-3 my-1">Matérias</h1>
+          </div>
+          <nav className="flex overflow-x p-2">
+            <ul className="flex flex-row m-auto items-center">
+              <li className="flex flex-col m-1 rounded-sm justify-center items-center bg-white	 h-3/6 ">
+                <h4>TADS 2022-2</h4>
+                <p>Programação Orientada à objetos</p>
+              </li>
+              <li className="flex flex-col m-1 rounded-sm justify-center items-center bg-white	 h-3/6 ">
+                <h4>TADS 2022-2</h4>
+                <p>Programação Orientada à objetos</p>
+              </li>
+              <li className="flex flex-col m-1 rounded-sm justify-center items-center bg-white	 h-3/6 ">
+                <h4>TADS 2022-2</h4>
+                <p>Programação Orientada à objetos</p>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div className="bg-verde-insted w-screen mx-2 h-1/3 flex-wrap rounded-md mt-4"></div>
         <div className="bg-verde-insted w-screen mx-2 h-1/3 flex-wrap rounded-md mt-4"></div>
       </main>
