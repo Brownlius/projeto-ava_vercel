@@ -1,7 +1,7 @@
 interface Props {
   hour: string;
   subject: string;
-  teacher: string;
+  teacher?: string;
 }
 
 const SubjectPost = ({ hour, subject, teacher }: Props) => {

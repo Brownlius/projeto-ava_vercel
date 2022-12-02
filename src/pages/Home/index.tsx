@@ -1,5 +1,6 @@
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import { currentDay, daysOfWeek } from './components/daysOfWeek';
 import SubjectPost from './components/subjectPost';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
 
       <main className="flex flex-wrap justify-center items-center mt-16 pt-4 pb-16 px-2 h-screen overflow-auto">
         <div className="bg-verde-insted w-screen  h-auto flex-wrap rounded-md">
+
           <div>
             <h1 className="text-xl text-white mx-3 my-1">Avisos</h1>
           </div>
@@ -20,14 +22,18 @@ const Home = () => {
           />
         </div>
 
+
         <div className="bg-verde-insted w-full h-1/6 flex flex-col rounded-md mt-4 p-1">
+
           <div className="flex justify-between">
             <h1 className="text-xl text-white mx-3 my-1">Horários</h1>
-            <h2 className="mx-3 my-1 font-semibold">Quarta-Feira</h2>
+            <h2 className="mx-3 my-1 font-semibold">{daysOfWeek[currentDay]}</h2>
           </div>
           <section className="overflow-auto">
             <nav>
+
               <ul className="w-full">
+
                 <SubjectPost
                   hour="19:00"
                   subject="Projeto Integrador II"
