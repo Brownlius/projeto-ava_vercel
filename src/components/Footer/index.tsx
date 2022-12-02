@@ -1,8 +1,10 @@
 const Footer = () => {
   return (
-    <div className="grid gap-0 grid-cols-4 grid-rows-1 py-1 justify-center items-center fixed inset-x-0 bottom-0 bg-verde-insted border-t border-black">
+    <div className="grid gap-0 grid-cols-4 grid-rows-1 py-1.5 justify-center items-center fixed inset-x-0 bottom-0 bg-verde-insted border-t border-black">
       <div className="justify-center items-center flex">
-        <img src="/images/house-icon.png" alt="Home button" width={30} />
+        <a href="/home">
+          <img src="/images/house-icon.png" alt="Home button" width={30} />
+        </a>
       </div>
       <div className="justify-center items-center flex">
         <img src="/images/calendar-icon.png" alt="Calendar button" width={30} />
