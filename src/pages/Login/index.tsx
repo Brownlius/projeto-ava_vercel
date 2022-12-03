@@ -6,19 +6,19 @@ const Login = () => {
   const [ra, setRa] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
-  // const handleChange = () => {
-
-  // };
+  const handleChange = (e: any) => {
+    const { value, name } = e.target;
+  };
 
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="bg-verde-insted grid gap-0 grid-cols-1 grid-rows-5 place-content-center rounded-xl h-3/5 w-4/5">
         <div className="bg-logo-insted bg-contain bg-center bg-no-repeat h-4/5 w-4/5 mx-auto mt-auto"></div>
         <div className="w-full justify-center flex mt-20">
-          <Input type={'text'} placeholder={' Informe seu RA'} />
+          <Input type={'text'} placeholder={' Informe seu RA'} value={ra} />
         </div>
         <div className="w-full justify-center flex mt-10">
-          <Input type={'password'} placeholder={' Informe sua senha'} />
+          <Input type={'password'} placeholder={' Informe sua senha'} value={password} />
         </div>
         <div className="w-full flex justify-center items-center mt-8 h-8">
           <a href="/home">

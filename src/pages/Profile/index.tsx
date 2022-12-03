@@ -31,9 +31,9 @@ const Profile = () => {
           </div>
         </section>
 
-        <section className="flex leading-7 py-3 bg-white rounded-md w-full justify-center text-center mt-4 ">
+        <section className="flex leading-7 py-3 bg-white rounded-md w-full justify-center text-center mt-4 border border-slate-400">
           <div>
-            <h2 className="font-semibold text-2xl	">Curso</h2>
+            <h2 className="font-semibold text-2xl">Curso</h2>
             <div>
               <h3>Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
             </div>
@@ -44,7 +44,7 @@ const Profile = () => {
         </section>
         <section className="bg-verde-insted mt-4 w-full rounded-md text-center">
           <div>
-            <h2 className="font-semibold text-2xl">Alterar senha</h2>
+            <h2 className="font-semibold text-2xl pt-2">Alterar senha</h2>
             <form>
               <div className="w-full my-3 justify-center flex">
                 <Input type={'text'} placeholder={'Informe senha atual'} />
