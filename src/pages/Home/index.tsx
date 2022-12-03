@@ -9,7 +9,7 @@ const Home = () => {
       <Header />
 
       <main className="flex flex-wrap justify-center items-center mt-16 pt-4 pb-16 px-2 h-screen overflow-auto">
-        <div className="bg-verde-insted w-screen  h-auto flex-wrap rounded-md">
+        <div className="bg-verde-insted w-screen h-auto flex-wrap rounded-md">
           <div>
             <h1 className="text-xl text-white mx-3 my-1">Avisos</h1>
           </div>
