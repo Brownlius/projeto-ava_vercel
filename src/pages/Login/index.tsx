@@ -1,7 +1,15 @@
+import { useState } from 'react';
 import Button from '../../components/Button/button';
 import Input from './components/Input';
 
 const Login = () => {
+  const [ra, setRa] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+
+  // const handleChange = () => {
+
+  // };
+
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="bg-verde-insted grid gap-0 grid-cols-1 grid-rows-5 place-content-center rounded-xl h-3/5 w-4/5">

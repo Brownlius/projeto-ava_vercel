@@ -4,7 +4,7 @@ interface Props {
 
 type InputProps = JSX.IntrinsicElements['input'] & Props;
 
-const Input = ({ type, placeholder }: InputProps) => {
+const Input = ({ type, placeholder, onChange }: InputProps) => {
   return (
     <input
       type={type}
@@ -24,6 +24,7 @@ const Input = ({ type, placeholder }: InputProps) => {
         focus:outline-none
         border-solid
         border-b"
+      onChange={onChange}
     />
   );
 };
