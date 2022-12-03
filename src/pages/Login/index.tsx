@@ -15,14 +15,14 @@ const Login = () => {
         <div className="w-full flex justify-center items-center mt-8 h-8">
           <a href="/home">
             <Button
-              className="bg-white shadow-md text-verde-insted text-xl h-12 w-40 rounded-3xl"
+              className="bg-white shadow-md font-semibold text-verde-insted text-xl h-12 w-40 rounded-3xl"
               label="LOGIN"
             />
           </a>
         </div>
         <div className="flex justify-center items-center w-full">
           <input type="checkbox" className="mx-1" />
-          <label className="text-xs text-slate-700 ml-0.5">Continuar conectado?</label>
+          <label className="text-xs  text-slate-700 ml-0.5">Continuar conectado?</label>
           <h4 className="ml-3 text-slate-700 hover:underline text-xs">Esqueceu sua senha?</h4>
         </div>
       </div>
