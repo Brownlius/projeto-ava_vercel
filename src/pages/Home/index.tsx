@@ -24,7 +24,7 @@ const Home = () => {
         <div className="bg-verde-insted w-full h-1/6 flex flex-col rounded-md mt-4 p-1">
           <div className="flex justify-between">
             <h1 className="text-xl text-white mx-3 my-1">Horários</h1>
-            <h2 className="mx-3 my-1 font-semibold">{daysOfWeek[currentDay]}</h2>
+            <h2 className="mx-3 my-1 text-white font-semibold">{daysOfWeek[currentDay]}</h2>
           </div>
           <section className="overflow-auto">
             <nav>

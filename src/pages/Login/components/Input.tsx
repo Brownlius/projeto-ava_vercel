@@ -1,5 +1,6 @@
 interface Props {
   placeholder?: string;
+  type: string;
 }
 
 type InputProps = JSX.IntrinsicElements['input'] & Props;

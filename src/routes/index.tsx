@@ -1,25 +1,18 @@
-import { Fragment, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Profile from '../pages/Profile';
-
-const Private = ({ Item }: any) => {
-  const [signed, setSigned] = useState<boolean>(true);
-
-  return signed ? <Item /> : <Login />;
-};
+import EditPassword from '../pages/Profile/editPassword';
 
 const RoutesApp = () => {
   return (
     <BrowserRouter>
-      <Fragment>
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/home" element={<Private Item={Home} />} />
-          <Route path="/profile" element={<Profile />} />
-        </Routes>
-      </Fragment>
+      <Routes>
+        <Route path="/edit-profile" element={<EditPassword />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Login />} />
+      </Routes>
     </BrowserRouter>
   );
 };
