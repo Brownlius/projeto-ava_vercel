@@ -7,40 +7,23 @@ const Login = () => {
   const [ra, setRa] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [valid, setValid] = useState(true);
-  const [validRa, setValidRa] = useState(true);
-  const [validPassword, setValidPassword] = useState(true);
-  const [errorRa, setErrorRa] = useState<JSX.Element>();
-  const [errorPassword, setErrorPassword] = useState<JSX.Element>();
+  const [error, setError] = useState<JSX.Element>();
 
   const handleClick = (e: React.MouseEvent<Element, MouseEvent>) => {
-    if (ra === '') {
+    if (ra === '' || password === '') {
       e.preventDefault();
-      setValidRa(false);
-      setErrorRa(<ErrorElement msg="Campo não pode estar vazio" />);
+      setValid(false);
+      setError(<ErrorElement msg="Campos não podem estar vazios" />);
     } else if (ra.length !== 10 || ra.match(/^[a-zA-Z]+$/g)) {
       e.preventDefault();
-      setValidRa(false);
-      setErrorRa(<ErrorElement msg="RA inválido" />);
-    } else {
-      setValidRa(true);
-    }
-
-    if (password === '') {
-      e.preventDefault();
-      setValidPassword(false);
-      setErrorPassword(<ErrorElement msg="Campo não pode estar vazio" />);
+      setValid(false);
+      setError(<ErrorElement msg="RA inválido" />);
     } else if (password.length < 6) {
       e.preventDefault();
-      setValidPassword(false);
-      setErrorPassword(<ErrorElement msg="Senha inválida (mínimo 6 dígitos)" />);
-    } else {
-      setValidPassword(true);
-    }
-
-    if (validPassword && validRa) {
-      setValid(true);
-    } else {
       setValid(false);
+      setError(<ErrorElement msg="Senha inválida (mínimo 6 dígitos)" />);
+    } else {
+      setValid(true);
     }
   };
 
@@ -57,7 +40,6 @@ const Login = () => {
               onChange={(v) => setRa(v.target.value)}
             />
           </div>
-          <div>{!validRa ? errorRa : null}</div>
         </div>
         <div>
           <div className="w-full justify-center flex mt-10">
@@ -68,25 +50,29 @@ const Login = () => {
               onChange={(v) => setPassword(v.target.value)}
             />
           </div>
-          <div>{!validPassword ? errorPassword : null}</div>
+          <div>{!valid ? error : null}</div>
         </div>
 
         <div className="flex justify-center w-full">
-          <label className="text-xs  text-slate-700 ml-0.5">
+          <label className="text-xs text-white ml-0.5">
             <input type="checkbox" className="mr-1" />
             Continuar conectado?
           </label>
-          <h4 className="ml-3 text-slate-700 hover:underline text-xs">Esqueceu sua senha?</h4>
         </div>
-        <div className="w-full flex justify-center items-center mt-8 h-8">
-          <a href={!valid ? '/home' : ''}>
-            <Button
-              className="bg-white shadow-md font-semibold text-verde-insted text-xl h-12 w-40 rounded-3xl"
-              label="LOGIN"
-              type="submit"
-              onClick={(e) => handleClick(e)}
-            />
-          </a>
+        <div className="w-full grid gap-0 grid-cols-1 grid-rows-2 justify-center items-center mt-8 h-8">
+          <div className="flex justify-center items-center mb-14">
+            <a href={valid ? '/home' : ''}>
+              <Button
+                className="bg-white shadow-md font-semibold text-verde-insted text-xl h-12 w-40 rounded-3xl"
+                label="LOGIN"
+                type="submit"
+                onClick={(e) => handleClick(e)}
+              />
+            </a>
+          </div>
+          <div className="flex justify-center items-end text-white hover:underline text-xs">
+            <h4>Esqueceu sua senha?</h4>
+          </div>
         </div>
       </div>
     </div>

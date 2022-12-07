@@ -41,15 +41,11 @@ const Profile = () => {
             </div>
           </div>
         </section>
-        <section className="bg-verde-insted mt-4 text-white w-full rounded-md pl-2 text-center">
+        <section className="bg-verde-insted mt-4 text-white w-full rounded-md pl-2 py-2 text-center">
           <div className="mb-1 mt-1">
-            <Button
-              className="bg-white font-semibold shadow-md text-verde-insted text-md px-2 rounded-3xl h-9 w-30 m-2"
-              label="Editar perfil"
-            />
             <a href="/edit-profile">
               <Button
-                className="bg-white font-semibold shadow-md text-verde-insted text-md px-2 rounded-3xl h-9 w-30 m-2"
+                className="bg-white font-semibold shadow-md text-verde-insted text-md px-2 rounded-3xl h-9 w-11/12 m-2"
                 label="Editar senha"
               />
             </a>
@@ -57,7 +53,7 @@ const Profile = () => {
           <div>
             <a href="/">
               <Button
-                className="bg-white font-semibold shadow-md text-red-500 text-md px-2 rounded-3xl h-9 w-30 m-2"
+                className="bg-white font-semibold shadow-md text-red-500 text-md px-2 rounded-3xl h-9 w-11/12 m-2"
                 label="Desconectar"
               />
             </a>
