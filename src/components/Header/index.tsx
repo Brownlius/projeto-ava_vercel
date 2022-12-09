@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="flex justify-between items-center fixed inset-x-0 top-0 h-16 bg-verde-insted py-1 border-b border-black">
+    <div className="flex justify-between items-center fixed inset-x-0 top-0 h-16 bg-verde-insted py-1 ">
       <div className="flex mx-3">
         <img src="/images/menu-button3.png" alt="Botão do menu" width={47} height={30} />
       </div>
