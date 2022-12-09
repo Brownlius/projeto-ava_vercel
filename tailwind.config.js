@@ -9,7 +9,7 @@ module.exports = {
       },
       colors: {
         'verde-insted': 'rgb(19,159,163)',
-        'verde-insted-icon': 'rgba(19,159,163,0.4)'
+        'verde-insted-icon': 'rgba(19,159,163,0.38)'
       },
       spacing: {
         '17/20': '85%',
