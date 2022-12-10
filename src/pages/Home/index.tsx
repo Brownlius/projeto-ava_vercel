@@ -81,37 +81,35 @@ const Home = () => {
             </ul>
           </nav>
         </section>
-        <div className="bg-verde-insted w-[calc(100vw-18px)] h-[25vh] flex flex-col rounded-2xl">
+        <div className="bg-verde-insted w-[calc(100vw-18px)] my-2 h-auto flex flex-col rounded-2xl">
           <div className="ml-4 my-1">
             <h1 className="text-2xl text-white font-semibold">Atividades</h1>
           </div>
-          <section className="overflow-auto px-1">
+          <section className="overflow-auto">
             <nav className="flex mb-3 overflow-auto">
               <ul className=" flex ml-2 ">
-                <li className="bg-white flex flex-row mx-2 m-1 rounded-2xl  w-[calc(100vw-75px)]">
-                  <div className="bg-verde-insted-icon text-center rounded-2xl flex font-semibold flex-col justify-center items-center p-3 ">
+                <li className="bg-white rounded-2xl flex flex-col mx-2 m-1 h-fit w-[calc(100vw-75px)]">
+                  <div className="bg-verde-insted-icon flex rounded-2xl  flex-row justify-between  py-2 px-5 ">
                     <h4>Quinta-Feira, 18/08</h4>
-                    <p>23:59</p>
-                    <button className="items-center bg-orange-300 font-semibold w-3/6 m-2 rounded-full p-2">
-                      Enviar
-                    </button>
+                    <p className="font-bold text-verde-texto">23:59</p>
                   </div>
-                  <div className=" flex flex-col items-center p-1 text-center ">
-                    <h4 className="font-semibold">Exercício de compreensão</h4>
-                    <p>Programação Orientada à objetos</p>
+                  <div className="flex flex-row justify-center items-center p-2 ">
+                    <div className="text-center">
+                      <h4 className="font-bold text-verde-texto">Exercício de compreensão</h4>
+                      <p>Programação Orientada à objetos</p>
+                    </div>
                   </div>
                 </li>
-                <li className="bg-white rounded-2xl flex flex-col mx-1 my-2 w-[calc(100vw-75px)]">
-                  <div className="bg-orange-300 flex rounded-2xl  font-semibold flex-row justify-between  p-3 ">
+                <li className="bg-white rounded-2xl flex flex-col mx-2 m-1 h-fit w-[calc(100vw-75px)]">
+                  <div className="bg-verde-insted-icon flex rounded-2xl  flex-row justify-between  py-2 px-5 ">
                     <h4>Quinta-Feira, 18/08</h4>
-                    <p>23:59</p>
+                    <p className="font-semibold ">23:59</p>
                   </div>
-                  <div className="flex flex-col items-center p-1">
-                    <h4 className="font-semibold">Exercício de compreensão</h4>
-                    <p>Programação Orientada à objetos</p>
-                    <button className="bg-orange-300 font-semibold  w-3/6 m-2 rounded-full p-2">
-                      Enviar
-                    </button>
+                  <div className="flex flex-row items-center p-2 ">
+                    <div className="text-center">
+                      <h4 className="font-semibold">Exercício de compreensão</h4>
+                      <p>Programação Orientada à objetos</p>
+                    </div>
                   </div>
                 </li>
               </ul>
