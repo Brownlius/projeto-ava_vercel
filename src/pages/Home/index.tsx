@@ -27,30 +27,54 @@ const Home = () => {
             </ul>
           </nav>
         </section>
-        <section className=" grid grid-cols-4	my-2 w-[calc(100vw-18px)] h-[10vh] items-center">
+        <section className=" grid grid-cols-4	my-2 w-[calc(100vw-18px)] h-[20vh] items-center">
           <div className="flex flex-col text-center mx-2">
             <div className=" flex justify-center h-[6vh] py-2 bg-verde-insted-icon rounded-2xl">
               <img src="./images\clock.png" className="w-1/2 " />
             </div>
-            <h3 className="">Horário</h3>
+            <h3 className=" text-sm font-semibold text-verde-texto ">Horário</h3>
           </div>
           <div className="flex flex-col text-center mx-2">
             <div className=" flex justify-center h-[6vh] py-2 bg-verde-insted-icon rounded-2xl">
               <img src="./images\grade.png" className="w-1/2 " />
             </div>
-            <h3 className="">Notas</h3>
+            <h3 className="text-sm font-semibold text-verde-texto">Notas</h3>
           </div>
           <div className="flex flex-col text-center mx-2">
             <div className=" flex justify-center h-[6vh] py-2 bg-verde-insted-icon rounded-2xl">
               <img src="./images\calendar.png" className="w-1/2 " />
             </div>
-            <h3 className="">Calendário</h3>
+            <h3 className="text-sm font-semibold text-verde-texto">Calendário</h3>
           </div>
-          <div className="flex flex-col text-center mx-2">
+          <div className="flex flex-col items-center text-center mx-2">
             <div className=" flex justify-center h-[6vh] py-2 bg-verde-insted-icon rounded-2xl">
               <img src="./images\notification.png" className="w-1/2" />
             </div>
-            <h3 className="">Avisos</h3>
+            <h3 className="text-sm font-semibold">Avisos</h3>
+          </div>
+          <div className="flex flex-col text-center mx-2">
+            <div className=" flex justify-center h-[6vh] py-2 bg-verde-insted-icon rounded-2xl">
+              <img src="./images\clock.png" className="w-1/2 " />
+            </div>
+            <h3 className=" text-sm font-semibold text-verde-texto ">Horário</h3>
+          </div>
+          <div className="flex flex-col text-center mx-2">
+            <div className=" flex justify-center h-[6vh] py-2 bg-verde-insted-icon rounded-2xl">
+              <img src="./images\grade.png" className="w-1/2 " />
+            </div>
+            <h3 className="text-sm font-semibold text-verde-texto">Notas</h3>
+          </div>
+          <div className="flex flex-col text-center mx-2">
+            <div className=" flex justify-center h-[6vh] py-2 bg-verde-insted-icon rounded-2xl">
+              <img src="./images\calendar.png" className="w-1/2 " />
+            </div>
+            <h3 className="text-sm font-semibold text-verde-texto">Calendário</h3>
+          </div>
+          <div className="flex flex-col items-center text-center mx-2">
+            <div className=" flex justify-center h-[6vh] py-2 bg-verde-insted-icon rounded-2xl">
+              <img src="./images\notification.png" className="w-1/2" />
+            </div>
+            <h3 className="text-sm font-semibold">Avisos</h3>
           </div>
         </section>
 
@@ -64,13 +88,13 @@ const Home = () => {
                 <div className="h-full w-2/6 flex flex-col justify-center items-center">
                   <img src="./images\education.png " alt="..." className="w-16 my-1" />
                 </div>
-                <p className="w-2/3">Programação Orientada à objetos</p>
+                <p className="w-2/3 text-verde-texto">Programação Orientada à objetos</p>
               </li>
               <li className="flex flex-row text-center items-center mx-2 m-1 rounded-2xl  bg-white w-[calc(100vw-75px)]">
                 <div className="h-full w-2/6 flex flex-col justify-center items-center">
                   <img src="./images\education.png " alt="..." className="w-16 my-1" />
                 </div>
-                <p className="w-2/3">Redes de computadores</p>
+                <p className="w-2/3 text-verde-texto">Redes de computadores</p>
               </li>
               <li className="flex flex-row text-center items-center mx-2 m-1 rounded-2xl  bg-white w-[calc(100vw-75px)]">
                 <div className="h-full w-2/6 flex flex-col justify-center items-center">
@@ -81,34 +105,34 @@ const Home = () => {
             </ul>
           </nav>
         </section>
-        <div className="bg-verde-insted w-[calc(100vw-18px)] my-2 h-auto flex flex-col rounded-2xl">
+        <div className="bg-verde-insted-icon w-[calc(100vw-18px)] my-2 h-auto flex flex-col rounded-2xl">
           <div className="ml-4 my-1">
-            <h1 className="text-2xl text-white font-semibold">Atividades</h1>
+            <h1 className="text-2xl text-verde-texto font-semibold">Atividades</h1>
           </div>
           <section className="overflow-auto">
             <nav className="flex mb-3 overflow-auto">
               <ul className=" flex ml-2 ">
                 <li className="bg-white rounded-2xl flex flex-col mx-2 m-1 h-fit w-[calc(100vw-75px)]">
-                  <div className="bg-verde-insted-icon flex rounded-2xl  flex-row justify-between  py-2 px-5 ">
-                    <h4>Quinta-Feira, 18/08</h4>
-                    <p className="font-bold text-verde-texto">23:59</p>
+                  <div className="bg-verde-insted flex rounded-2xl  flex-row justify-between  py-2 px-5 ">
+                    <h4 className="font-bold text-white">Quinta-Feira, 18/08</h4>
+                    <p className="font-bold text-white">23:59</p>
                   </div>
                   <div className="flex flex-row justify-center items-center p-2 ">
                     <div className="text-center">
                       <h4 className="font-bold text-verde-texto">Exercício de compreensão</h4>
-                      <p>Programação Orientada à objetos</p>
+                      <p className=" text-verde-texto">Programação Orientada à objetos</p>
                     </div>
                   </div>
                 </li>
                 <li className="bg-white rounded-2xl flex flex-col mx-2 m-1 h-fit w-[calc(100vw-75px)]">
-                  <div className="bg-verde-insted-icon flex rounded-2xl  flex-row justify-between  py-2 px-5 ">
-                    <h4>Quinta-Feira, 18/08</h4>
-                    <p className="font-semibold ">23:59</p>
+                  <div className="bg-verde-insted flex rounded-2xl  flex-row justify-between  py-2 px-5 ">
+                    <h4 className="font-bold text-white">Quinta-Feira, 18/08</h4>
+                    <p className="font-bold text-white">23:59</p>
                   </div>
-                  <div className="flex flex-row items-center p-2 ">
+                  <div className="flex flex-row justify-center items-center p-2 ">
                     <div className="text-center">
-                      <h4 className="font-semibold">Exercício de compreensão</h4>
-                      <p>Programação Orientada à objetos</p>
+                      <h4 className="font-bold text-verde-texto">Exercício de compreensão</h4>
+                      <p className=" text-verde-texto">Programação Orientada à objetos</p>
                     </div>
                   </div>
                 </li>
