@@ -27,70 +27,70 @@ const Home = () => {
             </ul>
           </nav>
         </section>
-        <section className="my-2 w-[100vw] min-h-[20vh] max-h-[26vh] ">
+        <section className="my-2 w-[100vw]">
           <nav className="flex flex-col ">
-            <ul className="flex flex-row h-1/2 justify-between">
-              <li className="flex flex-col w-[calc(100vw/4)]  mx-2">
-                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\clock.png" className="w-1/2 m-2" />
+            <ul className="flex flex-row h-1/2 ">
+              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2 mx-2">
+                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\clock.png" className="w-1/2 my-1 " />
                 </div>
-                <div className=" text-center">
+                <div className=" text-center h-1/2">
                   <h3 className=" text-sm font-semibold  text-verde-texto ">Horário</h3>
                 </div>
               </li>
-              <li className="flex flex-col w-[calc(100vw/4)]  mx-2 ">
-                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\grade.png" className="w-1/2 m-2 " />
+              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2 ">
+                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\grade.png" className="w-1/2 my-1" />
                 </div>
                 <div className="text-center">
                   <h3 className=" text-sm font-semibold  text-verde-texto ">Notas</h3>
                 </div>
               </li>
-              <li className="flex flex-col w-[calc(100vw/4)]  mx-2">
-                <div className=" flex justify-center  bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\calendar.png" className="w-1/2 m-2 " />
+              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
+                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\calendar.png" className="w-1/2 my-1" />
                 </div>
                 <div className="text-center">
                   <h3 className=" text-sm font-semibold  text-verde-texto ">Calendário</h3>
                 </div>
               </li>
-              <li className="flex flex-col w-[calc(100vw/4)]  mx-2">
-                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\notification.png" className="w-1/2 m-2" />
+              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
+                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\notification.png" className="w-1/2 my-1" />
                 </div>
                 <div className="text-center">
                   <h3 className=" text-sm font-semibold h-3/12 text-verde-texto ">Avisos</h3>
                 </div>
               </li>
             </ul>
-            <ul className="flex flex-row h-1/2 justify-between">
-              <li className="flex flex-col justify-between h-full w-[calc(100vw/4)]  mx-2">
-                <div className=" flex justify-center w-full bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\clock.png" className="w-1/2 m-2" />
+            <ul className="flex flex-row h-1/2 ">
+              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2 mx-2">
+                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\clock.png" className="w-1/2 my-1 " />
                 </div>
-                <div className=" text-center">
+                <div className=" text-center h-1/2">
                   <h3 className=" text-sm font-semibold  text-verde-texto ">Horário</h3>
                 </div>
               </li>
-              <li className="flex flex-col justify-between h-full w-[calc(100vw/4)]  mx-2 ">
-                <div className=" flex justify-center w-full h-full bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\grade.png" className="w-1/2 m-2 " />
+              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2 ">
+                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\grade.png" className="w-1/2 my-1" />
                 </div>
                 <div className="text-center">
                   <h3 className=" text-sm font-semibold  text-verde-texto ">Notas</h3>
                 </div>
               </li>
-              <li className="flex flex-col h-full w-[calc(100vw/4)]  mx-2">
-                <div className=" flex justify-center  w-full h-full bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\calendar.png" className="w-1/2 m-2 " />
+              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
+                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\calendar.png" className="w-1/2 my-1" />
                 </div>
                 <div className="text-center">
                   <h3 className=" text-sm font-semibold  text-verde-texto ">Calendário</h3>
                 </div>
               </li>
-              <li className="flex flex-col h-full w-[calc(100vw/4)]  mx-2">
-                <div className=" flex justify-center w-full h-full bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\notification.png" className="w-1/2 m-2" />
+              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
+                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\notification.png" className="w-1/2 my-1" />
                 </div>
                 <div className="text-center">
                   <h3 className=" text-sm font-semibold h-3/12 text-verde-texto ">Avisos</h3>
