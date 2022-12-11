@@ -5,3 +5,10 @@
 body {
   background-color:rgb(248,255,248);
 }
+main{
+font-family: 'roboto'
+}
+@font-face {
+  font-family: 'roboto';
+  src: local('roboto'), url(/src/fonts/roboto/Roboto-Light.ttf) format('truetype');
+}
