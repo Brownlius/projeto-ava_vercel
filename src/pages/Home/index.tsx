@@ -6,10 +6,10 @@ import SubjectPost from './components/subjectPost';
 const Home = () => {
   return (
     <>
-      <main className="flex flex-col pt-4 pb-16 justify-start items-center h-screen max-w-screen overflow-auto">
+      <main className="flex flex-col pt-2 pb-20 justify-start items-center h-screen max-w-screen overflow-auto">
         <section className="flex my-2 w-full ">
           <nav className="flex overflow-auto">
-            <ul className="flex  ">
+            <ul className="flex ">
               <li className="flex px-2 w-[calc(100vw-18px)]">
                 <img
                   src="/images/painel-infos.jpg"
@@ -30,12 +30,12 @@ const Home = () => {
         <section className="my-2 w-[100vw]">
           <nav className="flex flex-col ">
             <ul className="flex flex-row h-1/2 ">
-              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2 mx-2">
+              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
                 <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
                   <img src="./images\clock.png" className="w-1/2 my-1 " />
                 </div>
                 <div className=" text-center h-1/2">
-                  <h3 className=" text-sm font-semibold  text-verde-texto ">Horário</h3>
+                  <h3 className=" text-sm font-semibold ">Horário</h3>
                 </div>
               </li>
               <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2 ">
@@ -43,7 +43,7 @@ const Home = () => {
                   <img src="./images\grade.png" className="w-1/2 my-1" />
                 </div>
                 <div className="text-center">
-                  <h3 className=" text-sm font-semibold  text-verde-texto ">Notas</h3>
+                  <h3 className=" text-sm font-semibold ">Notas</h3>
                 </div>
               </li>
               <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
@@ -51,7 +51,7 @@ const Home = () => {
                   <img src="./images\calendar.png" className="w-1/2 my-1" />
                 </div>
                 <div className="text-center">
-                  <h3 className=" text-sm font-semibold  text-verde-texto ">Calendário</h3>
+                  <h3 className=" text-sm font-semibold ">Calendário</h3>
                 </div>
               </li>
               <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
@@ -59,17 +59,17 @@ const Home = () => {
                   <img src="./images\notification.png" className="w-1/2 my-1" />
                 </div>
                 <div className="text-center">
-                  <h3 className=" text-sm font-semibold h-3/12 text-verde-texto ">Avisos</h3>
+                  <h3 className=" text-sm font-semibold h-3/12">Avisos</h3>
                 </div>
               </li>
             </ul>
             <ul className="flex flex-row h-1/2 ">
-              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2 mx-2">
+              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
                 <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
                   <img src="./images\clock.png" className="w-1/2 my-1 " />
                 </div>
                 <div className=" text-center h-1/2">
-                  <h3 className=" text-sm font-semibold  text-verde-texto ">Horário</h3>
+                  <h3 className=" text-sm font-semibold ">Horário</h3>
                 </div>
               </li>
               <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2 ">
@@ -77,7 +77,7 @@ const Home = () => {
                   <img src="./images\grade.png" className="w-1/2 my-1" />
                 </div>
                 <div className="text-center">
-                  <h3 className=" text-sm font-semibold  text-verde-texto ">Notas</h3>
+                  <h3 className=" text-sm font-semibold ">Notas</h3>
                 </div>
               </li>
               <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
@@ -85,7 +85,7 @@ const Home = () => {
                   <img src="./images\calendar.png" className="w-1/2 my-1" />
                 </div>
                 <div className="text-center">
-                  <h3 className=" text-sm font-semibold  text-verde-texto ">Calendário</h3>
+                  <h3 className=" text-sm font-semibold ">Calendário</h3>
                 </div>
               </li>
               <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
@@ -93,7 +93,7 @@ const Home = () => {
                   <img src="./images\notification.png" className="w-1/2 my-1" />
                 </div>
                 <div className="text-center">
-                  <h3 className=" text-sm font-semibold h-3/12 text-verde-texto ">Avisos</h3>
+                  <h3 className=" text-sm font-semibold h-3/12">Avisos</h3>
                 </div>
               </li>
             </ul>
@@ -129,7 +129,7 @@ const Home = () => {
         </section>
         <div className="bg-verde-insted-icon w-[calc(100vw-18px)] my-2 h-auto flex flex-col rounded-2xl">
           <div className="ml-4 my-1">
-            <h1 className="text-2xl text-verde-texto font-semibold">Atividades</h1>
+            <h1 className="text-2xlfont-semibold">Atividades</h1>
           </div>
           <section className="overflow-auto">
             <nav className="flex mb-3 overflow-auto">

@@ -8,9 +8,9 @@ module.exports = {
         'logo-insted': "url('../public/images/logo-insted.png')"
       },
       colors: {
-        'verde-insted': 'rgb(19,159,163)',
-        'verde-insted-icon': 'rgba(19,159,163,0.38)',
-        'verde-texto': 'rgb(5,40,40)'
+        'verde-insted': 'rgb(29,169,173)',
+        'verde-insted-icon': '#1da9ad66',
+        'verde-texto': 'rgb(5, 40, 40)'
       },
       spacing: {
         '17/20': '85%',
