@@ -28,11 +28,11 @@ const Login = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="bg-verde-insted grid gap-0 grid-cols-1 grid-rows-5 place-content-center rounded-xl h-3/5 w-4/5">
-        <div className="bg-logo-insted bg-contain bg-center bg-no-repeat h-4/5 w-4/5 mx-auto mt-auto"></div>
-        <div>
-          <div className="w-full justify-center flex mt-20">
+    <main className="flex justify-center items-center h-screen">
+      <section className="bg-verde-insted flex flex-col rounded-2xl h-3/5 w-4/5">
+        <div className="bg-logo-insted bg-contain bg-center bg-no-repeat h-1/6 m-2 "></div>
+        <div className="flex flex-col justify-center h-3/6">
+          <div className="">
             <Input
               type={'text'}
               placeholder={' Informe seu RA'}
@@ -40,9 +40,8 @@ const Login = () => {
               onChange={(v) => setRa(v.target.value)}
             />
           </div>
-        </div>
-        <div>
-          <div className="w-full justify-center flex mt-10">
+
+          <div className="">
             <Input
               type={'password'}
               placeholder={' Informe sua senha'}
@@ -50,32 +49,33 @@ const Login = () => {
               onChange={(v) => setPassword(v.target.value)}
             />
           </div>
-          <div>{!valid ? error : null}</div>
-        </div>
 
-        <div className="flex justify-center w-full">
-          <label className="text-xs text-white ml-0.5">
-            <input type="checkbox" className="mr-1" />
-            Continuar conectado?
-          </label>
+          <div>{!valid ? error : null}</div>
+
+          <div className="text-center pt-1">
+            <label className="text-xs text-white ml-0.5">
+              <input type="checkbox" className="mr-1" />
+              Continuar conectado?
+            </label>
+          </div>
         </div>
-        <div className="w-full grid gap-0 grid-cols-1 grid-rows-2 justify-center items-center mt-8 h-8">
-          <div className="flex justify-center items-center mb-14">
+        <div className="flex flex-col justify-center items-center h-2/6">
+          <div className="bg-white shadow-md rounded-full w-1/2 text-center">
             <a href={valid ? '/home' : ''}>
               <Button
-                className="bg-white shadow-md font-semibold text-verde-insted text-xl h-12 w-40 rounded-3xl"
+                className="text-xl font-bold text-verde-texto p-2"
                 label="LOGIN"
                 type="submit"
                 onClick={(e) => handleClick(e)}
               />
             </a>
           </div>
-          <div className="flex justify-center items-end text-white hover:underline text-xs">
+          <div className=" text-white hover:underline text-xs m-2 ">
             <h4>Esqueceu sua senha?</h4>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
