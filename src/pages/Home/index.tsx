@@ -102,7 +102,7 @@ const Home = () => {
 
         <section className="bg-verde-insted flex flex-col w-[calc(100vw-18px)] rounded-2xl m-2">
           <div className="ml-4 my-1">
-            <h1 className="text-2xl text-white font-semibold">Matérias</h1>
+            <h1 className="text-2xl text-white font-bold">Matérias</h1>
           </div>
           <nav className="flex mb-3 overflow-auto">
             <ul className="flex ml-2">
@@ -129,7 +129,7 @@ const Home = () => {
         </section>
         <div className="bg-verde-insted-icon w-[calc(100vw-18px)] my-2 h-auto flex flex-col rounded-2xl">
           <div className="ml-4 my-1">
-            <h1 className="text-2xlfont-semibold">Atividades</h1>
+            <h1 className="text-2xl font-bold">Atividades</h1>
           </div>
           <section className="overflow-auto">
             <nav className="flex mb-3 overflow-auto">

@@ -24,12 +24,14 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center text-center w-1/4 ">
-        <div className="flex justify-center ">
-          <img src="/images/perfil-padrao.png" alt="Clock button" className="w-[30px]" />
-        </div>
-        <div>
-          <h3 className="text-sm  text-verde-texto ">Perfil</h3>
-        </div>
+        <a href="/profile">
+          <div className="flex justify-center ">
+            <img src="/images/perfil-padrao.png" alt="Clock button" className="w-[30px]" />
+          </div>
+          <div>
+            <h3 className="text-sm  text-verde-texto ">Perfil</h3>
+          </div>
+        </a>
       </div>
     </div>
   );
