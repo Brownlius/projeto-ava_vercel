@@ -10,15 +10,15 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center text-center w-1/4 relative bottom-4">
-        <div className=" flex justify-center bg-verde-insted border-[3px] border-white  rounded-2xl">
-          <a href="/home">
+        <a href="/home">
+          <div className=" flex justify-center bg-verde-insted border-[3px] border-white  rounded-2xl">
             <img
               className="w-[35px] py-1"
               src="/images/house-icon.png"
               alt="Botão página inicial"
             />
-          </a>
-        </div>
+          </div>
+        </a>
         <div className="">
           <h3 className="text-sm  text-verde-texto ">Início</h3>
         </div>

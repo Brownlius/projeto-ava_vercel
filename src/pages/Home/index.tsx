@@ -30,33 +30,33 @@ const Home = () => {
         <section className="my-2 w-[100vw]">
           <nav className="flex flex-col ">
             <ul className="flex flex-row h-1/2 ">
-              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
-                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\clock.png" className="w-1/2 my-1 " />
+              <li className="flex flex-col justify-center w-1/4 mx-2">
+                <div className=" flex justify-center  bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\clock.png" className=" max-h-[4vh] my-1" />
                 </div>
                 <div className=" text-center h-1/2">
                   <h3 className=" text-sm font-semibold ">Horário</h3>
                 </div>
               </li>
-              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2 ">
-                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\grade.png" className="w-1/2 my-1" />
+              <li className="flex flex-col justify-center w-1/4 mx-2 ">
+                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\grade.png" className=" max-h-[4vh] my-1" />
                 </div>
                 <div className="text-center">
                   <h3 className=" text-sm font-semibold ">Notas</h3>
                 </div>
               </li>
-              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
-                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\calendar.png" className="w-1/2 my-1" />
+              <li className="flex flex-col justify-center w-1/4 mx-2">
+                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\calendar.png" className="max-h-[4vh] my-1" />
                 </div>
                 <div className="text-center">
                   <h3 className=" text-sm font-semibold ">Calendário</h3>
                 </div>
               </li>
-              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
-                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\notification.png" className="w-1/2 my-1" />
+              <li className="flex flex-col justify-center w-1/4 mx-2">
+                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\notification.png" className="max-h-[4vh] my-1" />
                 </div>
                 <div className="text-center">
                   <h3 className=" text-sm font-semibold h-3/12">Avisos</h3>
@@ -64,33 +64,33 @@ const Home = () => {
               </li>
             </ul>
             <ul className="flex flex-row h-1/2 ">
-              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
-                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\clock.png" className="w-1/2 my-1 " />
+              <li className="flex flex-col justify-center w-1/4 mx-2">
+                <div className=" flex justify-center  bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\clock.png" className=" max-h-[4vh] my-1" />
                 </div>
                 <div className=" text-center h-1/2">
                   <h3 className=" text-sm font-semibold ">Horário</h3>
                 </div>
               </li>
-              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2 ">
-                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\grade.png" className="w-1/2 my-1" />
+              <li className="flex flex-col justify-center w-1/4 mx-2 ">
+                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\grade.png" className=" max-h-[4vh] my-1" />
                 </div>
                 <div className="text-center">
                   <h3 className=" text-sm font-semibold ">Notas</h3>
                 </div>
               </li>
-              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
-                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\calendar.png" className="w-1/2 my-1" />
+              <li className="flex flex-col justify-center w-1/4 mx-2">
+                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\calendar.png" className="max-h-[4vh] my-1" />
                 </div>
                 <div className="text-center">
                   <h3 className=" text-sm font-semibold ">Calendário</h3>
                 </div>
               </li>
-              <li className="flex flex-col justify-center w-[calc(100vw/4)] mx-2">
-                <div className=" flex justify-center h-full bg-verde-insted-icon rounded-2xl">
-                  <img src="./images\notification.png" className="w-1/2 my-1" />
+              <li className="flex flex-col justify-center w-1/4 mx-2">
+                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
+                  <img src="./images\notification.png" className="max-h-[4vh] my-1" />
                 </div>
                 <div className="text-center">
                   <h3 className=" text-sm font-semibold h-3/12">Avisos</h3>
@@ -129,7 +129,7 @@ const Home = () => {
         </section>
         <div className="bg-verde-insted-icon w-[calc(100vw-18px)] my-2 h-auto flex flex-col rounded-2xl">
           <div className="ml-4 my-1">
-            <h1 className="text-2xl font-bold">Atividades</h1>
+            <h1 className="text-2xl font-semibold">Atividades</h1>
           </div>
           <section className="overflow-auto">
             <nav className="flex mb-3 overflow-auto">
