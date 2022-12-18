@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <main className="flex flex-col pt-2 pb-20 justify-start items-center h-screen max-w-screen overflow-auto">
         <section className="flex my-2 w-full ">
-          <nav className="flex overflow-auto">
+          <nav className="flex overflow-auto ">
             <ul className="flex ">
               <li className="flex px-2 w-[calc(100vw-18px)]">
                 <img
