@@ -52,10 +52,10 @@ const Login = () => {
 
           <div>{!valid ? error : null}</div>
 
-          <div className="text-center pt-1">
-            <label className="text-xs text-white ml-0.5">
-              <input type="checkbox" className="mr-1" />
-              Continuar conectado?
+          <div className="flex justify-center m-2">
+            <label className="flex flex-row text-center text-sm ">
+              <input type="checkbox" className="mx-1" />
+              <p className="text-white">Continuar conectado?</p>
             </label>
           </div>
         </div>
