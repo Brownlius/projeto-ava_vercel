@@ -30,7 +30,7 @@ const Login = () => {
   return (
     <main className="flex justify-center items-center h-screen">
       <section className="bg-verde-insted flex flex-col rounded-2xl h-3/5 w-4/5">
-        <div className="bg-logo-insted bg-contain bg-center bg-no-repeat h-1/6 m-2 "></div>
+        <div className="bg-logo-insted bg-contain bg-center bg-no-repeat h-1/6 mx-2 my-4 "></div>
         <div className="flex flex-col justify-center h-3/6">
           <div className="">
             <Input
@@ -70,8 +70,10 @@ const Login = () => {
               />
             </a>
           </div>
-          <div className=" text-white hover:underline text-xs m-2 ">
-            <h4>Esqueceu sua senha?</h4>
+          <div className="   m-2 ">
+            <h4 className="hover:underline text-xs text-verde-texto text-opacity-75">
+              Esqueceu sua senha?
+            </h4>
           </div>
         </div>
       </section>
