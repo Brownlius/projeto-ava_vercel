@@ -15,11 +15,11 @@ const Input = ({ type, placeholder, onChange, value }: InputProps) => {
         items-center
         mx-auto
         w-4/5
-        h-8
+        h-10
         text-md
         text-white
-        bg-verde-insted
-        placeholder:text-white
+        bg-inherit
+        placeholder:text-texto-input
         border-white
         hover:placeholder:opacity-0
         focus:outline-none
