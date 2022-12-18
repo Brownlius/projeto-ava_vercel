@@ -3,7 +3,6 @@ interface Props {
   subject: string;
   teacher?: string;
 }
-
 const SubjectPost = ({ hour, subject, teacher }: Props) => {
   return (
     <li className="bg-white w-full flex-wrap justify-between h-1/4 rounded-md my-2 grid grid-rows-1 grid-cols-3">
