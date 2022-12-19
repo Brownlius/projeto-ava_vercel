@@ -1,32 +1,33 @@
 import Footer from '../../components/Footer';
-import Header from '../../components/Header';
-import { currentDay, daysOfWeek } from './components/daysOfWeek';
-import SubjectPost from './components/subjectPost';
+import { pagination } from './components/swiper';
+import { Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Home = () => {
   return (
     <>
       <main className="flex flex-col pt-2 pb-20 justify-start items-center h-screen max-w-screen overflow-auto">
-        <section className="flex my-2 w-full ">
-          <nav className="flex overflow-auto ">
-            <ul className="flex ">
-              <li className="flex px-2 w-[calc(100vw-18px)]">
-                <img
-                  src="/images/painel-infos.jpg"
-                  alt="Painel de informação"
-                  className=" rounded-2xl "
-                />
-              </li>
-              <li className=" flex px-2 w-[calc(100vw-18px)]">
-                <img
-                  src="/images/painel-infos.jpg"
-                  alt="Painel de informação"
-                  className=" rounded-2xl"
-                />
-              </li>
-            </ul>
-          </nav>
-        </section>
+        <Swiper
+          className="flex my-2 w-full "
+          pagination={pagination}
+          loop={true}
+          modules={[Pagination]}
+        >
+          <SwiperSlide className="flex px-2 w-[calc(100vw-18px)]">
+            <img
+              src="/images/painel-infos.jpg"
+              alt="Painel de informação"
+              className=" rounded-2xl "
+            />
+          </SwiperSlide>
+          <SwiperSlide className=" flex px-2 w-[calc(100vw-18px)]">
+            <img
+              src="/images/painel-infos.jpg"
+              alt="Painel de informação"
+              className=" rounded-2xl"
+            />
+          </SwiperSlide>
+        </Swiper>
         <section className="my-2 w-[100vw]">
           <nav className="flex flex-col ">
             <ul className="flex flex-row h-1/2 ">
@@ -99,7 +100,6 @@ const Home = () => {
             </ul>
           </nav>
         </section>
-
         <section className="bg-verde-insted flex flex-col w-[calc(100vw-18px)] rounded-2xl m-2">
           <div className="ml-4 my-1">
             <h1 className="text-2xl text-white font-bold">Matérias</h1>
