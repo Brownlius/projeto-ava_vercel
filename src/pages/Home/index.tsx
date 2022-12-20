@@ -1,6 +1,6 @@
 import Footer from '../../components/Footer';
 import { pagination } from './components/swiper';
-import { Autoplay, Navigation, Pagination } from 'swiper';
+import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Home = () => {
@@ -107,28 +107,24 @@ const Home = () => {
           <div className="ml-4 my-1">
             <h1 className="text-2xl text-white font-bold">Matérias</h1>
           </div>
-          <nav className="flex mb-3 overflow-auto">
-            <ul className="flex ml-2">
-              <li className="flex flex-row text-center items-center mx-2 m-1 rounded-2xl  bg-white w-[calc(100vw-75px)]">
-                <div className="h-full w-2/6 flex flex-col justify-center items-center">
-                  <img src="./images\education.png " alt="..." className="w-16 my-1" />
-                </div>
-                <p className="w-2/3 text-verde-texto">Programação Orientada à objetos</p>
-              </li>
-              <li className="flex flex-row text-center items-center mx-2 m-1 rounded-2xl  bg-white w-[calc(100vw-75px)]">
-                <div className="h-full w-2/6 flex flex-col justify-center items-center">
-                  <img src="./images\education.png " alt="..." className="w-16 my-1" />
-                </div>
-                <p className="w-2/3 text-verde-texto">Redes de computadores</p>
-              </li>
-              <li className="flex flex-row text-center items-center mx-2 m-1 rounded-2xl  bg-white w-[calc(100vw-75px)]">
-                <div className="h-full w-2/6 flex flex-col justify-center items-center">
-                  <img src="./images\education.png " alt="..." className="w-16 my-1" />
-                </div>
-                <p className="w-2/3">Projeto Integrador II</p>
-              </li>
-            </ul>
-          </nav>
+          <Swiper
+            modules={[Navigation, Pagination, EffectFade]}
+            spaceBetween={50}
+            slidesPerView={1}
+            className="flex m-2 w-full pb-7 rounded-2xl bg-white"
+            pagination={pagination}
+            effect={'fade'}
+          >
+            <SwiperSlide className="flex flex-row mx-2 justify-start text-center items-center  ">
+              <img src="./images\education.png " alt="..." className="w-16 m-2" />
+              <p className="w-2/3 text-verde-texto">Programação Orientada à objetos</p>
+            </SwiperSlide>
+
+            <SwiperSlide className="flex flex-row justify-start text-center items-center ">
+              <img src="./images\education.png " alt="..." className="w-16 m-2" />
+              <p className="w-2/3 text-verde-texto">Projeto Integrador III</p>
+            </SwiperSlide>
+          </Swiper>
         </section>
         <div className="bg-verde-insted-icon w-[calc(100vw-18px)] my-2 h-auto flex flex-col rounded-2xl">
           <div className="ml-4 my-1">
