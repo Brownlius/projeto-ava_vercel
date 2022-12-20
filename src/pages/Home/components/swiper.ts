@@ -1,3 +1,4 @@
+import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -7,3 +8,9 @@ export const pagination = {
     return '<span class="' + className + '">' + '</span>';
   }
 };
+
+const autoplay = new Swiper('.swiper', {
+  autoplay: {
+    delay: 5000
+  }
+});

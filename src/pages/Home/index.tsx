@@ -1,6 +1,6 @@
 import Footer from '../../components/Footer';
 import { pagination } from './components/swiper';
-import { Pagination } from 'swiper';
+import { Autoplay, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Home = () => {
@@ -8,19 +8,22 @@ const Home = () => {
     <>
       <main className="flex flex-col pt-2 pb-20 justify-start items-center h-screen max-w-screen overflow-auto">
         <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
           className="flex w-full pb-7"
           pagination={pagination}
           loop={true}
-          modules={[Pagination]}
+          autoplay={{ delay: 2500, disableOnInteraction: false, waitForTransition: true }}
+          speed={900}
+          slidesPerView={1.075}
         >
-          <SwiperSlide className="flex px-2 ">
+          <SwiperSlide className="flex justify-center px-2 ">
             <img
               src="/images/painel-infos.jpg"
               alt="Painel de informação"
               className=" rounded-2xl "
             />
           </SwiperSlide>
-          <SwiperSlide className=" flex px-2 ">
+          <SwiperSlide className=" flex justify-center px-2 ">
             <img
               src="/images/painel-infos.jpg"
               alt="Painel de informação"
