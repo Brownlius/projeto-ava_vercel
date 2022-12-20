@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 *{
-  ms-overflow-style: none; 
+  ms-overflow-style: none;
   scrollbar-width: none;
   color:rgb(5, 40, 40)}
 body {
@@ -19,3 +19,20 @@ font-family: 'roboto'
   font-family: 'roboto';
   src: local('roboto'), url(/src/fonts/roboto/Roboto-Light.ttf) format('truetype');
 }
+/* Estilo do Swiper */
+.swiper-pagination{
+  display:flex;
+  justify-content:center;
+  transition: 1.75s all;
+}
+
+.swiper-pagination-bullet{
+  background:rgb(5, 40, 40)}
+
+.swiper-pagination-bullet-active{
+  width: 25px;
+  transition: 0.4s all;
+  border-radius: 16px;
+  background:rgb(29, 169, 173);
+}
+

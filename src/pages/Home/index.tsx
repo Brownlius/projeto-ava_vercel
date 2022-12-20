@@ -8,19 +8,19 @@ const Home = () => {
     <>
       <main className="flex flex-col pt-2 pb-20 justify-start items-center h-screen max-w-screen overflow-auto">
         <Swiper
-          className="flex my-2 w-full "
+          className="flex w-full pb-7"
           pagination={pagination}
           loop={true}
           modules={[Pagination]}
         >
-          <SwiperSlide className="flex px-2 w-[calc(100vw-18px)]">
+          <SwiperSlide className="flex px-2 ">
             <img
               src="/images/painel-infos.jpg"
               alt="Painel de informação"
               className=" rounded-2xl "
             />
           </SwiperSlide>
-          <SwiperSlide className=" flex px-2 w-[calc(100vw-18px)]">
+          <SwiperSlide className=" flex px-2 ">
             <img
               src="/images/painel-infos.jpg"
               alt="Painel de informação"
