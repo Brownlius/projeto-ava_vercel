@@ -36,3 +36,9 @@ font-family: 'roboto'
   background:rgb(29, 169, 173);
 }
 
+.swiper-button-next
+{
+  background: rgb(29, 169, 173) !important;
+  width: 35px;
+  height: 35px;
+}

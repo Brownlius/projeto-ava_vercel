@@ -9,25 +9,25 @@ const Home = () => {
       <main className="flex flex-col pt-2 pb-20 justify-start items-center h-screen max-w-screen overflow-auto">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          className="flex w-full pb-7"
+          className="flex w-full"
           pagination={pagination}
           loop={true}
-          autoplay={{ delay: 2500, disableOnInteraction: false, waitForTransition: true }}
-          speed={900}
+          autoplay={{ delay: 3500, disableOnInteraction: false, waitForTransition: true }}
+          speed={600}
           slidesPerView={1.075}
         >
           <SwiperSlide className="flex justify-center px-2 ">
             <img
               src="/images/painel-infos.jpg"
               alt="Painel de informação"
-              className=" rounded-2xl "
+              className=" rounded-2xl w-full h-sull object-cover"
             />
           </SwiperSlide>
           <SwiperSlide className=" flex justify-center px-2 ">
             <img
               src="/images/painel-infos.jpg"
               alt="Painel de informação"
-              className=" rounded-2xl"
+              className=" rounded-2xl  w-full h-sull object-cover"
             />
           </SwiperSlide>
         </Swiper>
@@ -109,19 +109,19 @@ const Home = () => {
           </div>
           <Swiper
             modules={[Navigation, Pagination, EffectFade]}
-            spaceBetween={50}
             slidesPerView={1}
-            className="flex m-2 w-full pb-7 rounded-2xl bg-white"
+            className="flex  m-2 pt-2 pb-6 rounded-2xl bg-white"
             pagination={pagination}
+            navigation={true}
             effect={'fade'}
+            fadeEffect={{ crossFade: true }}
           >
-            <SwiperSlide className="flex flex-row mx-2 justify-start text-center items-center  ">
-              <img src="./images\education.png " alt="..." className="w-16 m-2" />
+            <SwiperSlide className="flex flex-row  justify-center text-center items-center  ">
+              <img src="./images\education.png " alt="..." className="w-1/6 p-1" />
               <p className="w-2/3 text-verde-texto">Programação Orientada à objetos</p>
             </SwiperSlide>
-
-            <SwiperSlide className="flex flex-row justify-start text-center items-center ">
-              <img src="./images\education.png " alt="..." className="w-16 m-2" />
+            <SwiperSlide className="flex flex-row justify-center text-center items-center  ">
+              <img src="./images\education.png " alt="..." className="w-1/6 p-1" />
               <p className="w-2/3 text-verde-texto">Projeto Integrador III</p>
             </SwiperSlide>
           </Swiper>

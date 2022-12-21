@@ -8,9 +8,3 @@ export const pagination = {
     return '<span class="' + className + '">' + '</span>';
   }
 };
-
-const autoplay = new Swiper('.swiper', {
-  autoplay: {
-    delay: 5000
-  }
-});
