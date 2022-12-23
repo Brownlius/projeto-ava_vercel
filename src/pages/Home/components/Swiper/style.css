@@ -1,0 +1,23 @@
+
+/* Estilo do Swiper */
+.swiper-pagination{
+  display:flex;
+  justify-content:center;
+  transition: 1.75s all;
+}
+
+.swiper-pagination-bullet{
+  background:rgb(5, 40, 40)}
+
+.swiper-pagination-bullet-active {
+  width: 25px;
+  transition: 0.4s all;
+  border-radius: 16px;
+  background: rgb(29, 169, 173);
+}
+.swiper-button-next
+{
+  color: rgb(29, 169, 173) !important;
+  width: 35px;
+  height: 35px;
+}

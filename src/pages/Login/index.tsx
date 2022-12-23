@@ -28,8 +28,8 @@ const Login = () => {
   };
 
   return (
-    <main className="flex justify-center items-center h-screen">
-      <section className="bg-verde-insted flex flex-col rounded-2xl h-3/5 w-4/5">
+    <main className="flex justify-center items-center h-screen bg-background-login bg-cover">
+      <section className="bg-verde-insted flex flex-col rounded-2xl h-3/5 w-4/5 shadow-ml">
         <div className="bg-logo-insted bg-contain bg-center bg-no-repeat h-1/6 mx-2 my-4 "></div>
         <div className="flex flex-col justify-center h-3/6">
           <div className="">

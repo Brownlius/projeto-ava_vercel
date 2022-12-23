@@ -5,13 +5,15 @@ module.exports = {
     extend: {
       backgroundImage: {
         'background-login': "url('../public/images/background-login.jpg')",
-        'logo-insted': "url('../public/images/logo-insted.png')"
+        'logo-insted': "url('../public/images/logo-insted.png')",
+        'relogio-icon': "url('../public/images/clock.png')"
       },
       colors: {
         'verde-insted': 'rgb(29,169,173)',
         'verde-insted-icon': 'rgba(138, 220, 222, 1)',
         'verde-texto': 'rgb(5, 40, 40)',
-        'texto-input': 'rgba(250,250,250,0.75)'
+        'texto-input': 'rgba(250,250,250,0.75)',
+        'cor-de-fundo': 'rgb(248,255,248)'
       },
       spacing: {
         '17/20': '85%',

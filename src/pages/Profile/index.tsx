@@ -1,11 +1,9 @@
-import Button from '../../components/Button/button';
 import Footer from '../../components/Footer';
-import Header from '../../components/Header';
 
 const Profile = () => {
   return (
     <>
-      <main className="flex flex-col pt-2 pb-20 justify-start items-center h-screen max-w-screen overflow-auto">
+      <main className="flex flex-col pt-2 pb-20 justify-start items-center h-screen max-w-screen overflow-auto bg-cor-de-fundo">
         <section className="my-2 bg-verde-insted-icon w-[calc(100vw-18px)]  rounded-2xl">
           <div className="pl-4 py-1 rounded-2xl">
             <h1 className="text-2xl font-bold ">Perfil</h1>

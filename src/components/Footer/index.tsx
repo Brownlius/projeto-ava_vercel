@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="flex justify-between h-[54px] fixed inset-x-0 bottom-0 border-t-[0.5px] border-verde-insted-icon bg-white ">
+    <div className="flex justify-between h-[54px] fixed inset-x-0 bottom-0 border-t-[0.5px] border-verde-insted-icon bg-cor-de-fundo z-10 ">
       <div className="flex flex-col justify-center text-center w-1/4 ">
         <div className="flex justify-center ">
           <img src="/images/menu-button3.png" alt="Calendar button" className="w-[30px]" />
