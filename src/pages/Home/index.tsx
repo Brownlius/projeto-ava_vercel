@@ -39,7 +39,7 @@ const Home = () => {
           <nav className="flex flex-col ">
             <ul className="flex flex-row h-1/2 ">
               <li className="flex flex-col justify-center w-1/4 mx-2 ">
-                <div className=" flex justify-center  bg-verde-insted-icon rounded-2xl ">
+                <div className=" flex justify-center  bg-verde-insted-icon rounded-2xl h-full ">
                   <img src="./images\clock.png" className="py-1 aspect-video object-contain" />
                 </div>
                 <div className=" text-center h-1/2">
@@ -47,7 +47,7 @@ const Home = () => {
                 </div>
               </li>
               <li className="flex flex-col justify-center w-1/4 mx-2 ">
-                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
+                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl h-full">
                   <img src="./images\grade.png" className=" py-1 aspect-video object-contain" />
                 </div>
                 <div className="text-center">
@@ -55,7 +55,7 @@ const Home = () => {
                 </div>
               </li>
               <li className="flex flex-col justify-center w-1/4 mx-2">
-                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
+                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl  h-full">
                   <img src="./images\calendar.png" className="py-1 aspect-video object-contain" />
                 </div>
                 <div className="text-center">
@@ -63,7 +63,7 @@ const Home = () => {
                 </div>
               </li>
               <li className="flex flex-col justify-center w-1/4 mx-2">
-                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
+                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl h-full">
                   <img
                     src="./images\notification.png"
                     className="py-1 aspect-video object-contain"
@@ -76,7 +76,7 @@ const Home = () => {
             </ul>
             <ul className="flex flex-row h-1/2 ">
               <li className="flex flex-col justify-center w-1/4 mx-2">
-                <div className=" flex justify-center  bg-verde-insted-icon rounded-2xl">
+                <div className=" flex justify-center  bg-verde-insted-icon rounded-2xl  h-full">
                   <img src="./images\clock.png" className=" py-1 aspect-video object-contain" />
                 </div>
                 <div className=" text-center h-1/2">
@@ -84,7 +84,7 @@ const Home = () => {
                 </div>
               </li>
               <li className="flex flex-col justify-center w-1/4 mx-2 ">
-                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
+                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl h-full">
                   <img src="./images\grade.png" className=" py-1 aspect-video object-contain" />
                 </div>
                 <div className="text-center">
@@ -92,7 +92,7 @@ const Home = () => {
                 </div>
               </li>
               <li className="flex flex-col justify-center w-1/4 mx-2">
-                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
+                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl h-full">
                   <img src="./images\library.png" className="py-1 aspect-video object-contain" />
                 </div>
                 <div className="text-center">
@@ -100,7 +100,7 @@ const Home = () => {
                 </div>
               </li>
               <li className="flex flex-col justify-center w-1/4 mx-2">
-                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl">
+                <div className=" flex justify-center bg-verde-insted-icon rounded-2xl h-full">
                   <img
                     src="./images\financeiro.png"
                     className="py-1 aspect-video object-contain "
