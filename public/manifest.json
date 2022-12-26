@@ -1,10 +1,10 @@
 {
   "short_name": "AVA INSTED",
-  "name": "Ambiente Virtual do Aluno",
-  "description": "Ambiente Virtual do Aluno da Faculdade Insted",
+  "name": "Ambiente Virtual do Aluno INSTED",
+  "description": "Ambiente Virtual do Aluno da Faculdade INSTED",
   "dir": "ltr",
   "lang": "pt",
-  "start_url": "",
+  "start_url": "/login",
   "orientation": "portrait",
   "display": "fullscreen",
   "theme_color": "#1da9ad",
@@ -427,7 +427,7 @@
       "sizes": "192x192"
     },
     {
-      "purpose": "maskable",
+      "purpose": "any",
       "src": "android/android-launchericon-144-144.png",
       "sizes": "144x144"
     },
