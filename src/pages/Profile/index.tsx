@@ -9,11 +9,13 @@ const Profile = () => {
             <h1 className="text-2xl font-bold ">Perfil</h1>
           </div>
           <div className=" flex flex-row items-center">
-            <div className="flex w-3/6 px-2">
-              <div className="relative">
-                <img src="/images/perfil-padrao.png" className="" />
-                <img src="/images/botao-editar.png" className="absolute w-8 bottom-3 left-4" />
-              </div>
+            <div className="relative aspect-square  w-6/12 px-2 mx-2 ">
+              <img
+                src="/images/perfil-padrao.png"
+                className="rounded-full aspect-square object-contain bg-center bg-no-repeat
+                  "
+              />
+              <img src="/images/botao-editar.png" className="absolute w-4/12 bottom-0 left-0" />
             </div>
             <div className=" flex flex-col ">
               <div className="bg-white text-sm text-center text-verde-texto font-semibold p-2 rounded-2xl w-fit">
