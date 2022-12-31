@@ -1,5 +1,6 @@
 import Footer from '../../components/Footer';
 import { pagination } from './components/Swiper/swiper';
+import 'swiper/css/navigation';
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './components/Swiper/style.css';
@@ -116,9 +117,13 @@ const Home = () => {
         <section className="bg-verde-insted-icon flex flex-col w-[calc(100vw-24px)] rounded-2xl m-2">
           <div className="ml-4 my-1">
             <h1 className="text-2xl text-verde-insted-texto font-bold">Matérias</h1>
+            <div>
+              <div className="custom-button-prev"></div>
+              <div className="custom-button-next"></div>
+            </div>
           </div>
           <Swiper
-            className="flex  m-2 pt-2 pb-7 rounded-2xl bg-white"
+            className="flex m-2 pt-2 pb-7 rounded-2xl bg-white"
             modules={[Navigation, Pagination, EffectFade]}
             slidesPerView={1}
             pagination={pagination}
@@ -129,6 +134,10 @@ const Home = () => {
             <SwiperSlide className="flex flex-row justify-center text-center items-center  ">
               <img src="./images\education.png " alt="..." className="w-1/6 p-2 mr-2" />
               <p className="w-2/3 text-verde-texto">Programação Orientada à objetos</p>
+            </SwiperSlide>
+            <SwiperSlide className="flex flex-row justify-center text-center items-center  ">
+              <img src="./images\education.png " alt="..." className="w-1/6 p-2 mr-2" />
+              <p className="w-2/3 text-verde-texto">Probabilidade e Estatistica</p>
             </SwiperSlide>
             <SwiperSlide className="flex flex-row justify-center text-center items-center  ">
               <img src="./images\education.png " alt="..." className="w-1/6 p-2 mr-2" />
@@ -145,10 +154,8 @@ const Home = () => {
             direction={'horizontal'}
             modules={[Navigation, Pagination]}
             slidesPerView={1.075}
-            spaceBetween={20}
+            spaceBetween={15}
             pagination={pagination}
-            navigation={true}
-            mousewheel={true}
             effect={'cards'}
           >
             <SwiperSlide className="bg-white rounded-2xl flex flex-col h-fit">

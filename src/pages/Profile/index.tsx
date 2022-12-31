@@ -11,9 +11,8 @@ const Profile = () => {
           <div className=" flex flex-row items-center">
             <div className="relative aspect-square  w-6/12 px-2 mx-2 ">
               <img
-                src="/images/perfil-padrao.png"
-                className="rounded-full aspect-square object-contain bg-center bg-no-repeat
-                  "
+                src="/images/perfil-padrao1.png"
+                className="rounded-full aspect-square object-cover "
               />
               <img src="/images/botao-editar.png" className="absolute w-4/12 bottom-0 left-0" />
             </div>
