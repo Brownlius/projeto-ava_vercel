@@ -13,8 +13,7 @@
   width: 25px;
   transition: 0.4s all;
   border-radius: 16px;
-  background: rgb(29, 169, 173);
-}
+  background: rgb(5, 40, 40)}
 .swiper-button-next
 {
   color: rgb(29, 169, 173) !important;

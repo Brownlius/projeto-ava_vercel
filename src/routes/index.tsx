@@ -11,7 +11,7 @@ const RoutesApp = () => {
         <Route path="/edit-profile" element={<EditPassword />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
