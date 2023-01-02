@@ -1,11 +1,19 @@
 import Footer from '../../components/Footer';
-import { pagination } from './components/Swiper/swiper';
-import 'swiper/css/navigation';
-import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
+import 'swiper/css/navigation';
+import { pagination } from './components/Swiper/swiper';
 import './components/Swiper/style.css';
+import { usePopper } from 'react-popper';
+import React, { useState, useRef } from 'react';
 
 const Home = () => {
+  const [referenceElement, setReferenceElement] = useState<HTMLElement | null>(null);
+  const [popperElement, setPopperElement] = useState<HTMLDivElement | null>(null);
+  const { styles, attributes } = usePopper(referenceElement, popperElement, {
+    placement: 'bottom-start'
+  });
+
   return (
     <>
       <main className="flex flex-col pt-2 pb-20 justify-start items-center h-screen w-screen overflow-y-auto">
@@ -55,7 +63,7 @@ const Home = () => {
                   <h3 className=" text-sm  ">Notas</h3>
                 </div>
               </li>
-              <li className="flex flex-col justify-center w-1/4 mx-2">
+              <li className="flex flex-col justify-center w-1/4 mx-2" ref={setReferenceElement}>
                 <div className=" flex justify-center bg-verde-insted rounded-2xl  h-full">
                   <img src="./images\calendar.png" className="py-1 aspect-video object-contain" />
                 </div>
@@ -117,10 +125,6 @@ const Home = () => {
         <section className="bg-verde-insted-icon flex flex-col w-[calc(100vw-24px)] rounded-2xl m-2">
           <div className="ml-4 my-1">
             <h1 className="text-2xl text-verde-insted-texto font-bold">Matérias</h1>
-            <div>
-              <div className="custom-button-prev"></div>
-              <div className="custom-button-next"></div>
-            </div>
           </div>
           <Swiper
             className="flex m-2 pt-2 pb-7 rounded-2xl bg-white"
@@ -183,6 +187,14 @@ const Home = () => {
               </div>
             </SwiperSlide>
           </Swiper>
+        </div>
+        <div
+          ref={setPopperElement}
+          style={styles.popper}
+          {...attributes.popper}
+          className="bg-verde-insted"
+        >
+          Dianho
         </div>
       </main>
       <Footer />
