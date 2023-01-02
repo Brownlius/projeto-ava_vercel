@@ -131,16 +131,16 @@ const Home = () => {
             effect={'fade'}
             fadeEffect={{ crossFade: true }}
           >
-            <SwiperSlide className="flex flex-row justify-center text-center items-center  ">
-              <img src="./images\education.png " alt="..." className="w-1/6 p-2 mr-2" />
+            <SwiperSlide className="flex flex-row justify-center text-center items-center px-1 ">
+              <img src="./images\education.png " alt="..." className="w-1/6 p-1 mr-1" />
               <p className="w-2/3 text-verde-texto">Programação Orientada à objetos</p>
             </SwiperSlide>
-            <SwiperSlide className="flex flex-row justify-center text-center items-center  ">
-              <img src="./images\education.png " alt="..." className="w-1/6 p-2 mr-2" />
+            <SwiperSlide className="flex flex-row justify-center text-center items-center px-1 ">
+              <img src="./images\education.png " alt="..." className="w-1/6 p-1 mr-1" />
               <p className="w-2/3 text-verde-texto">Probabilidade e Estatistica</p>
             </SwiperSlide>
-            <SwiperSlide className="flex flex-row justify-center text-center items-center  ">
-              <img src="./images\education.png " alt="..." className="w-1/6 p-2 mr-2" />
+            <SwiperSlide className="flex flex-row justify-center text-center items-center px-1 ">
+              <img src="./images\education.png " alt="..." className="w-1/6 p-1 mr-1" />
               <p className="w-2/3 text-verde-texto">Projeto Integrador III</p>
             </SwiperSlide>
           </Swiper>

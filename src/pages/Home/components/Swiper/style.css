@@ -17,10 +17,12 @@
   transition: 0.4s all;
   border-radius: 16px;}
 
+/* .swiper-button-prev:after{
+ content: "" !important;} */
 .swiper-button-prev{
-  top:6px;
-  z-index:11;
-  left:4px;
+/* 
+  background-image: url("/public/images/seta-swiper-dir.svg") !important; */
+  left:4px !important;
 }
 
 .swiper-button-next{
