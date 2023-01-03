@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 import { pagination } from './components/Swiper/swiper';
 import './components/Swiper/style.css';
+import CalendarModal from './components/Modal/modal';
 
 const Home = () => {
   return (
@@ -54,14 +55,19 @@ const Home = () => {
                   <h3 className=" text-sm  ">Notas</h3>
                 </div>
               </li>
-              <li className="flex flex-col justify-center w-1/4 mx-2">
+              <button
+                className="flex flex-col justify-center w-1/4 mx-2"
+                onClick={() => {
+                  CalendarModal.openModal();
+                }}
+              >
                 <div className=" flex justify-center bg-verde-insted rounded-2xl h-full">
                   <img src="./images\calendar.png" className="py-1 aspect-video object-contain" />
                 </div>
                 <div className="text-center">
                   <h3 className=" text-sm  ">Calendário</h3>
                 </div>
-              </li>
+              </button>
               <li className="flex flex-col justify-center w-1/4 mx-2">
                 <div className=" flex justify-center bg-verde-insted rounded-2xl h-full">
                   <img

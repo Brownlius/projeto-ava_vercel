@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 
 Modal.setAppElement('#root');
 
-function Calendar() {
+function CalendarModal() {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal() {
@@ -14,7 +14,6 @@ function Calendar() {
   }
   return (
     <div className="modal">
-      <button onClick={openModal}>Abrir o negócio</button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -27,4 +26,4 @@ function Calendar() {
     </div>
   );
 }
-export default Calendar;
+export default CalendarModal;
