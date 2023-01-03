@@ -1,19 +1,10 @@
 import Footer from '../../components/Footer';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
-import 'swiper/css/navigation';
 import { pagination } from './components/Swiper/swiper';
 import './components/Swiper/style.css';
-import { usePopper } from 'react-popper';
-import React, { useState, useRef } from 'react';
 
 const Home = () => {
-  const [referenceElement, setReferenceElement] = useState<HTMLElement | null>(null);
-  const [popperElement, setPopperElement] = useState<HTMLDivElement | null>(null);
-  const { styles, attributes } = usePopper(referenceElement, popperElement, {
-    placement: 'bottom-start'
-  });
-
   return (
     <>
       <main className="flex flex-col pt-2 pb-20 justify-start items-center h-screen w-screen overflow-y-auto">
@@ -63,8 +54,8 @@ const Home = () => {
                   <h3 className=" text-sm  ">Notas</h3>
                 </div>
               </li>
-              <li className="flex flex-col justify-center w-1/4 mx-2" ref={setReferenceElement}>
-                <div className=" flex justify-center bg-verde-insted rounded-2xl  h-full">
+              <li className="flex flex-col justify-center w-1/4 mx-2">
+                <div className=" flex justify-center bg-verde-insted rounded-2xl h-full">
                   <img src="./images\calendar.png" className="py-1 aspect-video object-contain" />
                 </div>
                 <div className="text-center">
@@ -187,14 +178,6 @@ const Home = () => {
               </div>
             </SwiperSlide>
           </Swiper>
-        </div>
-        <div
-          ref={setPopperElement}
-          style={styles.popper}
-          {...attributes.popper}
-          className="bg-verde-insted"
-        >
-          Dianho
         </div>
       </main>
       <Footer />

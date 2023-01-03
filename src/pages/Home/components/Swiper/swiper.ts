@@ -1,6 +1,7 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 export const pagination = {
   // eslint-disable-next-line prettier/prettier

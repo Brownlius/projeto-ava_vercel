@@ -20,7 +20,7 @@
 /* .swiper-button-prev:after{
  content: "" !important;} */
 .swiper-button-prev{
-/* 
+/*
   background-image: url("/public/images/seta-swiper-dir.svg") !important; */
   left:4px !important;
 }
