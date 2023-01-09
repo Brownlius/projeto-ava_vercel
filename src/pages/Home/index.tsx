@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 import { pagination } from './components/Swiper/swiper';
 import './components/Swiper/style.css';
-import CalendarModal from './components/Modal/modal';
+import Icons from './components/Icons';
 
 const Home = () => {
   return (
@@ -36,89 +36,9 @@ const Home = () => {
             </SwiperSlide>
           </Swiper>
         </section>
-        <section className="my-2 w-[calc(100vw-24px)]">
-          <nav className="flex flex-col ">
-            <ul className="flex flex-row h-1/2 my-1">
-              <li className="flex flex-col justify-center w-1/4 mx-2 ">
-                <div className=" flex justify-center  bg-verde-insted rounded-2xl h-full ">
-                  <img src="./images\clock.png" className="py-1 aspect-video object-contain" />
-                </div>
-                <div className=" text-center h-1/2">
-                  <h3 className=" text-sm  ">Horário</h3>
-                </div>
-              </li>
-              <li className="flex flex-col justify-center w-1/4 mx-2 ">
-                <div className=" flex justify-center bg-verde-insted rounded-2xl h-full">
-                  <img src="./images\grade.png" className=" py-1 aspect-video object-contain" />
-                </div>
-                <div className="text-center">
-                  <h3 className=" text-sm  ">Notas</h3>
-                </div>
-              </li>
-              <button
-                className="flex flex-col justify-center w-1/4 mx-2"
-                onClick={() => {
-                  CalendarModal.openModal();
-                }}
-              >
-                <div className=" flex justify-center bg-verde-insted rounded-2xl h-full">
-                  <img src="./images\calendar.png" className="py-1 aspect-video object-contain" />
-                </div>
-                <div className="text-center">
-                  <h3 className=" text-sm  ">Calendário</h3>
-                </div>
-              </button>
-              <li className="flex flex-col justify-center w-1/4 mx-2">
-                <div className=" flex justify-center bg-verde-insted rounded-2xl h-full">
-                  <img
-                    src="./images\notification.png"
-                    className="py-1 aspect-video object-contain"
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className=" text-sm  h-3/12">Avisos</h3>
-                </div>
-              </li>
-            </ul>
-            <ul className="flex flex-row h-1/2 my-1">
-              <li className="flex flex-col justify-center w-1/4 mx-2">
-                <div className=" flex justify-center  bg-verde-insted rounded-2xl  h-full">
-                  <img src="./images\clock.png" className=" py-1 aspect-video object-contain" />
-                </div>
-                <div className=" text-center h-1/2">
-                  <h3 className=" text-sm  ">Horário</h3>
-                </div>
-              </li>
-              <li className="flex flex-col justify-center w-1/4 mx-2 ">
-                <div className=" flex justify-center bg-verde-insted rounded-2xl h-full">
-                  <img src="./images\grade.png" className=" py-1 aspect-video object-contain" />
-                </div>
-                <div className="text-center">
-                  <h3 className=" text-sm  ">Notas</h3>
-                </div>
-              </li>
-              <li className="flex flex-col justify-center w-1/4 mx-2">
-                <div className=" flex justify-center bg-verde-insted rounded-2xl h-full">
-                  <img src="./images\library.png" className="py-1 aspect-video object-contain" />
-                </div>
-                <div className="text-center">
-                  <h3 className=" text-sm  h-3/12">Biblioteca</h3>
-                </div>
-              </li>
-              <li className="flex flex-col justify-center w-1/4 mx-2">
-                <div className=" flex justify-center bg-verde-insted rounded-2xl h-full">
-                  <img
-                    src="./images\financeiro.png"
-                    className="py-1 aspect-video object-contain "
-                  />
-                </div>
-                <div className="text-center">
-                  <h3 className=" text-sm  ">financeiro</h3>
-                </div>
-              </li>
-            </ul>
-          </nav>
-        </section>
+
+        <Icons />
+
         <section className="bg-verde-insted-icon flex flex-col w-[calc(100vw-24px)] rounded-2xl m-2">
           <div className="ml-4 my-1">
             <h1 className="text-2xl text-verde-insted-texto font-bold">Matérias</h1>

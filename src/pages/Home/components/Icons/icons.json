@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "img": "./images/icons-home/clock.png",
+    "label": "Horário"
+  },
+  {
+    "id": 2,
+    "img": "./images/icons-home/grade.png",
+    "label": "Notas"
+  },
+  {
+    "id": 3,
+    "img": "./images/icons-home/calendar.png",
+    "label": "Calendário"
+  },
+  {
+    "id": 4,
+    "img": "./images/icons-home/library.png",
+    "label": "Biblioteca"
+  },
+  {
+    "id": 5,
+    "img": "./images/icons-home/notification.png",
+    "label": "Notificação"
+  },
+  {
+    "id": 6,
+    "img": "./images/icons-home/notification.png",
+    "label": "Notificação"
+  },
+  {
+    "id": 7,
+    "img": "./images/icons-home/notification.png",
+    "label": "Notificação"
+  },
+  {
+    "id": 8,
+    "img": "./images/icons-home/notification.png",
+    "label": "Notificação"
+  }
+]
