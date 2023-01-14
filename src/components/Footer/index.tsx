@@ -10,9 +10,9 @@ const Footer = () => {
         />
         <h3 className="text-sm text-verde-texto ">Menu</h3>
       </div>
-      <a href="/home" className="flex justify-center w-1/4">
+      <a href="/home" className="flex justify-center w-1/4 ">
         <button className="flex flex-col relative bottom-4 items-center justify-around text-center">
-          <div className="flex justify-center bg-verde-insted border-cor-de-fundo border-2 rounded-2xl ">
+          <div className="flex justify-center bg-verde-insted border-cor-de-fundo border-2 rounded-2xl  py-0.5">
             <img
               src="/images/botao-inicio.png"
               alt="Botão para menu inicial"

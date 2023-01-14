@@ -8,8 +8,11 @@ import Icons from './components/Icons';
 const Home = () => {
   return (
     <>
-      <main className="flex flex-col pt-2 pb-20 justify-start items-center h-screen w-screen overflow-y-auto">
-        <section className="w-full mt-1">
+      <main
+        className="flex flex-col pt-2 pb-20 justify-start items-center h-screen w-screen overflow-y-auto
+      bg-cor-de-fundo"
+      >
+        <section className="w-full mt-1 ">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             className="flex px-2 pb-7 "
@@ -39,7 +42,7 @@ const Home = () => {
 
         <Icons />
 
-        <section className="bg-verde-insted-icon flex flex-col w-[calc(100vw-24px)] rounded-2xl m-2">
+        <section className="bg-verde-insted-icon flex flex-col w-[calc(100vw-24px)] rounded-2xl m-2 shadow-md">
           <div className="ml-4 my-1">
             <h1 className="text-2xl text-verde-insted-texto font-bold">Matérias</h1>
           </div>
@@ -66,7 +69,7 @@ const Home = () => {
             </SwiperSlide>
           </Swiper>
         </section>
-        <div className="bg-verde-insted-icon w-[calc(100vw-24px)] my-2 h-5/12 flex flex-col rounded-2xl">
+        <section className="bg-verde-insted-icon w-[calc(100vw-24px)] my-2 h-5/12 flex flex-col rounded-2xl shadow-md ">
           <div className="ml-4 my-1">
             <h1 className="text-2xl font-semibold text-verde-texto">Atividades</h1>
           </div>
@@ -104,7 +107,7 @@ const Home = () => {
               </div>
             </SwiperSlide>
           </Swiper>
-        </div>
+        </section>
       </main>
       <Footer />
     </>
