@@ -37,13 +37,13 @@ const Profile = () => {
             </div>
           </section>
 
-          <section className="   w-[calc(100vw-18px)] rounded-2xl my-2 bg-cor-de-fundo shadow-md">
-            <div className="pl-4 py-1   rounded-2xl">
+          <section className="w-[calc(100vw-18px)] rounded-2xl my-2 bg-cor-de-fundo shadow-md">
+            <div className="px-2 py-1">
               <h1 className="text-2xl  font-bold text-verde-texto ">Curso</h1>
             </div>
-            <div className="flex flex-col p-2 text-md rounded-2xl leading-7 py-3 w-full justify-center ">
+            <div className="flex flex-col p-4 text-md rounded-2xl leading-7 py-2 w-full justify-center ">
               <div>
-                <h3 className="text-xl font-semibold px-2">
+                <h3 className="text-xl px-1 font-semibold">
                   Tec. em Análise e Desenvolvimento de Sistemas
                 </h3>
               </div>
@@ -61,7 +61,7 @@ const Profile = () => {
             </div>
           </section>
           <section className=" bg-verde-insted w-[calc(100vw-18px)] my-2 rounded-2xl shadow-md">
-            <div className="pl-4 py-1 rounded-2xl">
+            <div className="px-2 py-1">
               <h1 className="text-2xl  font-bold text-white ">Informações pessoais</h1>
             </div>
             <div className="flex justify-center">
@@ -69,7 +69,7 @@ const Profile = () => {
             </div>
           </section>
           <section className=" bg-verde-insted w-[calc(100vw-18px)] my-2 rounded-2xl shadow-md">
-            <div className="pl-4 py-1 rounded-2xl">
+            <div className="px-2 py-1">
               <h1
                 className="text-2xl  font-bold text-white
              "
