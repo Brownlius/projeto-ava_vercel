@@ -5,7 +5,7 @@ const Profile = () => {
     <>
       <main
         className="flex flex-col pt-2 pb-20 justify-start items-start h-screen max-w-screen overflow-auto
-      bg-gradient-to-b from-verde-insted via-verde-insted-icon to-cor-de-fundo"
+      bg-gradient-to-b from-verde-insted via-cor-de-fundo to-cor-de-fundo"
       >
         <a href="/home">
           <section className="flex flex-nowrap items-center mx-4">
@@ -16,10 +16,10 @@ const Profile = () => {
         <section className="flex flex-col justify-start items-center mx-auto">
           <section className="my-2 bg-cor-de-fundo w-[calc(100vw-18px)] py-2 rounded-2xl shadow-md">
             <div className=" flex flex-row justify-center ">
-              <div className="relative aspect-square  w-6/12 px-2 mx-2 ">
+              <div className="relative aspect-square  w-6/12 mx-2 ">
                 <img
                   src="/images/perfil-padrao1.png"
-                  className="rounded-full  aspect-square object-cover shadow-md"
+                  className="rounded-[50%] aspect-square object-cover shadow-sm"
                 />
                 <img src="/images/botao-editar.png" className="absolute w-4/12 bottom-0 left-0" />
               </div>
@@ -83,7 +83,6 @@ const Profile = () => {
           </section>
         </section>
       </main>
-      <Footer />
     </>
   );
 };

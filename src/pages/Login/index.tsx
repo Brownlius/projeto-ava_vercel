@@ -28,8 +28,8 @@ const Login = () => {
   };
 
   return (
-    <main className="flex justify-center items-center h-screen bg-background-login bg-cover">
-      <section className="bg-verde-insted flex flex-col rounded-2xl h-3/5 w-4/5 shadow-ml">
+    <main className="flex justify-center items-center h-screen bg-background-login bg-cover ">
+      <section className="bg-verde-insted flex flex-col rounded-2xl h-3/5 w-4/5 shadow-ml shadow-md">
         <div className="bg-logo-insted bg-contain bg-center bg-no-repeat h-1/6 mx-2 my-4 "></div>
         <div className="flex flex-col justify-center h-3/6">
           <div className="">
@@ -60,7 +60,7 @@ const Login = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center h-2/6">
-          <div className="bg-white shadow-md rounded-full w-1/2 text-center">
+          <div className="bg-white shadow-sm rounded-full w-1/2 text-center">
             <a href={valid ? '/home' : ''}>
               <Button
                 className="text-xl font-bold text-verde-texto p-2"
