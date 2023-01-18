@@ -3,7 +3,6 @@ import Footer from '../../components/Footer';
 
 const Profile = () => {
   const [isToogle, setToogle] = useState(true);
-
   return (
     <main
       className="flex flex-col pt-2 pb-20 justify-start items-start h-screen max-w-screen overflow-auto
@@ -17,7 +16,7 @@ const Profile = () => {
       </a>
       <section className="flex flex-col justify-start items-center mx-auto">
         <section className="my-2 bg-cor-de-fundo w-[calc(100vw-18px)] py-2 rounded-2xl shadow-md">
-          <div className=" flex justify-start flex-row ">
+          <div className=" flex justify-center flex-row ">
             <div className="relative aspect-square  w-4/12 m-2 ">
               <img
                 src="/images/perfil-padrao1.png"
@@ -60,10 +59,23 @@ const Profile = () => {
             </div>
           </div>
         </section>
-
-        <section className=" $`{ }` w-[calc(100vw-18px)] my-2 rounded-2xl shadow-md">
+        <section
+          className={
+            isToogle
+              ? 'w-[calc(100vw-18px)] my-2 rounded-2xl shadow-md animate-pulse'
+              : 'bg-verde-insted w-[calc(100vw-18px)] my-2 rounded-2xl shadow-md motion-safe:animate-spin animate-bounce'
+          }
+        >
           <div className="px-2 py-1">
-            <h1 className="text-2xl  font-bold text-white ">Informações pessoais</h1>
+            <h1
+              className={
+                isToogle
+                  ? 'text-2xl  font-bold text-verde-texto'
+                  : 'text-2xl  font-bold text-cor-de-fundo'
+              }
+            >
+              Informações pessoais
+            </h1>
           </div>
           {isToogle && (
             <div className="flex flex-col p-4 text-md rounded-2xl leading-7 py-2 w-full justify-center">
