@@ -54,17 +54,17 @@ const Home = () => {
             effect={'fade'}
             fadeEffect={{ crossFade: true }}
           >
-            <SwiperSlide className="flex flex-row justify-center text-center items-center px-1 ">
-              <img src="./images\education.png " alt="..." className="w-1/6 p-1 mr-1" />
-              <p className="w-2/3 text-verde-texto">Programação Orientada à objetos</p>
+            <SwiperSlide className="flex flex-row justify-start items-center px-6">
+              <img src="./images\education.png " alt="Chapéu de formatura" className="w-1/5" />
+              <p className="w-fit text-verde-texto m-auto ">Matemática aplicada</p>
             </SwiperSlide>
-            <SwiperSlide className="flex flex-row justify-center text-center items-center px-1 ">
-              <img src="./images\education.png " alt="..." className="w-1/6 p-1 mr-1" />
-              <p className="w-2/3 text-verde-texto">Probabilidade e Estatistica</p>
+            <SwiperSlide className="flex flex-row justify-start text-center items-center px-6">
+              <img src="./images\education.png " alt="Chapéu de formatura" className="w-1/5" />
+              <p className="w-fit text-verde-texto m-auto">Algebra linear</p>
             </SwiperSlide>
-            <SwiperSlide className="flex flex-row justify-center text-center items-center px-1 ">
-              <img src="./images\education.png " alt="..." className="w-1/6 p-1 mr-1" />
-              <p className="w-2/3 text-verde-texto">Projeto Integrador III</p>
+            <SwiperSlide className="flex flex-row justify-start text-center items-center px-6">
+              <img src="./images\education.png " alt="Chapéu de formatura" className="w-1/5" />
+              <p className="w-fit text-verde-texto m-auto">Programação Orientada à objetos</p>
             </SwiperSlide>
           </Swiper>
         </section>
