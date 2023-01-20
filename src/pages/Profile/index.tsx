@@ -61,9 +61,9 @@ const Profile = () => {
         </section>
         <section
           className={
-            isToogle
-              ? 'w-[calc(100vw-18px)] my-2 rounded-2xl shadow-md animate-pulse'
-              : 'bg-verde-insted w-[calc(100vw-18px)] my-2 rounded-2xl shadow-md motion-safe:animate-spin animate-bounce'
+            'animate-recolher' + isToogle
+              ? 'w-[calc(100vw-18px)] my-2 rounded-2xl shadow-md '
+              : 'bg-verde-insted w-[calc(100vw-18px)] my-2 rounded-2xl shadow-md animate-recolher'
           }
         >
           <div className="px-2 py-1">

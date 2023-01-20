@@ -23,6 +23,15 @@ module.exports = {
       boxShadow: {
         sm: '-2px 1px 6px rgba(5, 40, 40, 0.175)',
         md: '-3px 2px 9px rgba(5, 40, 40, 0.2)'
+      },
+      keyframes: {
+        recolher: {
+          from: { opacity: '0' },
+          to: { opacity: '100' }
+        }
+      },
+      animation: {
+        recolher: 'recolher 1s linear 1s slidein'
       }
     }
   },
