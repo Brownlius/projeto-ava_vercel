@@ -3,7 +3,7 @@ import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Profile from '../pages/Profile';
 import Footer from 'components/Footer';
-import EditPassword from '../pages/Profile/editPassword';
+import EditPassword from '../pages/Profile/components/editarSenha/editPassword';
 
 const RoutesApp = () => {
   return (
