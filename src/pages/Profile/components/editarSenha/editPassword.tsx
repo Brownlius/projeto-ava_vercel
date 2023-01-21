@@ -58,52 +58,21 @@ export default function EditPassword() {
       </div>
       {isToogle && (
         <form>
-          <div className="w-full my-4 justify-center flex">
+          <div className="relative z-0 w-full mb-6 group">
             <input
-              className="flex
-        justify-center
-        items-center
-        mx-auto
-        w-10/12
-        p-1
-        text-md
-        text-verde-texto
-        bg-inherit
-        placeholder:text-verde-texto
-        border-verde-texto
-        hover:placeholder:opacity-0
-        focus:outline-none
-        border-solid
-        border-b"
+              className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
               type={'password'}
-              placeholder={'Informe a senha atual'}
+              placeholder={''}
               value={password}
               onChange={(v) => setPassword(v.target.value)}
+              name="floating_email"
             />
-          </div>
-
-          <div className="w-full my-2 justify-center flex">
-            <input
-              className="flex
-        justify-center
-        items-center
-        mx-auto
-        w-10/12
-        p-1
-        text-md
-        text-verde-texto
-        bg-inherit
-        placeholder:text-verde-texto
-        border-verde-texto
-        hover:placeholder:opacity-0
-        focus:outline-none
-        border-solid
-        border-b"
-              type={'password'}
-              placeholder={'Informe a nova senha'}
-              value={password}
-              onChange={(v) => setPassword(v.target.value)}
-            />
+            <label
+              htmlFor="floating_email"
+              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >
+              Email address
+            </label>
           </div>
 
           <div>
@@ -132,11 +101,12 @@ export default function EditPassword() {
             </div>
             <p className="text-red-400">{!valid ? errorPassword : null}</p>
           </div>
-          <div className="text-center my-2">
-            <label className="text-xs text-slate-700 ml-0.5">
-              <input type="checkbox" className="mr-1" />
-              Sair de todas sessões?
-            </label>
+          <div className="flex justify-center items-center text-center w-full ">
+            <input
+              type="checkbox"
+              className=" bg-red-100 border-red-300 text-red-500 focus:text-red-500"
+            />
+            <label className="text-sm my-2 text-slate-700">Sair de todas sessões</label>
           </div>
           <div className="flex justify-center mb-1">
             <a href={valid ? '/profile' : ''}>
