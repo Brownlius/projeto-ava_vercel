@@ -30,13 +30,21 @@ module.exports = {
         md: '-3px 2px 9px rgba(5, 40, 40, 0.2)'
       },
       keyframes: {
-        recolher: {
-          from: { opacity: '0' },
-          to: { opacity: '100' }
+        aparecer: {
+          from: { opacity: '0%' },
+          to: { opacity: '100%' }
+        },
+        abrir: {
+          from: { height: '5%', background: 'rgb(29, 169, 173)' },
+          to: { height: '100%', background: 'rgb(240,255,250)' }
+        },
+        fechar: {
+          from: { height: '100%', background: 'rgb(240,255,250)' },
+          to: { height: '5%', background: 'rgb(29, 169, 173)' }
         }
       },
       animation: {
-        recolher: 'recolher 1s linear 1s slidein'
+        abrir: 'abrir 1.25s ease 0s'
       }
     }
   },

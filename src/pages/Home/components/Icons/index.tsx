@@ -34,13 +34,11 @@ export default function Icons() {
             key={item.id}
             onClick={() => handleClick(item.id)}
           >
-            <div className=" flex justify-center  bg-dark-verde-insted-icon rounded-2xl h-full shadow-sm ">
+            <div className=" flex justify-center rounded-2xl h-full shadow-sm bg-verde-insted">
               <img src={item.img} alt={item.label} className="py-1 aspect-video object-contain" />
             </div>
             <div className=" text-center h-1/2">
-              <h3 className=" text-sm  text-verde-texto dark:text-dark-verde-texto">
-                {item.label}
-              </h3>
+              <h3 className=" text-sm  text-verde-texto">{item.label}</h3>
             </div>
           </li>
         ))}

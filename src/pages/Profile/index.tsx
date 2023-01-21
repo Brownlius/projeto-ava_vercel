@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import Footer from '../../components/Footer';
 
 const Profile = () => {
+  const [isToogle, setToogle] = useState(false);
+
   return (
     <>
       <main
@@ -16,18 +19,18 @@ const Profile = () => {
         <section className="flex flex-col justify-start items-center mx-auto">
           <section className="my-2 bg-cor-de-fundo w-[calc(100vw-18px)] py-2 rounded-2xl shadow-md">
             <div className=" flex flex-row justify-center ">
-              <div className="relative aspect-square  w-6/12 mx-2 ">
+              <div className="relative aspect-square  w-4/12 m-2 ">
                 <img
                   src="/images/perfil-padrao1.png"
-                  className="rounded-[50%] aspect-square object-cover shadow-sm"
+                  className="rounded-[50%] aspect-square object-cover "
                 />
                 <img src="/images/botao-editar.png" className="absolute w-4/12 bottom-0 left-0" />
               </div>
               <div className=" flex flex-col justify-center">
-                <div className="bg-verde-insted-icon text-sm text-center text-verde-texto p-2 rounded-2xl w-fit shadow-sm">
-                  <p className="font-md">RA - 1010001580</p>
+                <div className="bg-verde-insted-icon text-sm text-center text-verde-texto p-2 rounded-2xl w-fit ">
+                  <p className="font-semibold">RA - 1010001580</p>
                 </div>
-                <h2 className=" text-2xl font-bold	pr-2">Pedro Henrique Souza de Almeida</h2>
+                <h2 className=" text-2xl font-bold	pr-2">Pedro Almeida</h2>
               </div>
             </div>
 
@@ -43,30 +46,79 @@ const Profile = () => {
             </div>
             <div className="flex flex-col p-4 text-md rounded-2xl leading-7 py-2 w-full justify-center ">
               <div>
-                <h3 className="text-xl px-1 font-semibold">
-                  Tec. em Análise e Desenvolvimento de Sistemas
-                </h3>
+                <h3 className="text-xl px-1">Tec. em Análise e Desenvolvimento de Sistemas</h3>
               </div>
             </div>
             <div className="flex flex-row mx-2 justify-around text-center gap-1 ">
-              <div className="flex justify-center items-center shadow-sm text-verde-texto  p-2 rounded-2xl my-2 w-1/3 bg-verde-insted-icon">
+              <div className="flex justify-center items-center font-semibold text-verde-texto  p-2 rounded-2xl my-2 w-full bg-verde-insted-icon">
                 2º Semestre
               </div>
-              <div className="flex justify-center items-center shadow-sm text-verde-texto p-2 rounded-2xl my-2 w-1/3 bg-verde-insted-icon">
+              <div className="flex justify-center items-center font-semibold text-verde-texto p-2 rounded-2xl my-2 w-full bg-verde-insted-icon">
                 2/2022
               </div>
-              <div className="flex justify-center items-center shadow-sm text-verde-texto p-2 rounded-2xl my-2 w-1/3 bg-verde-insted-icon">
+              <div className="flex justify-center items-center font-semibold text-verde-texto p-2 rounded-2xl my-2 w-full bg-verde-insted-icon">
                 Cursando
               </div>
             </div>
           </section>
-          <section className=" bg-verde-insted w-[calc(100vw-18px)] my-2 rounded-2xl shadow-md">
+          <section
+            className={
+              isToogle
+                ? 'bg-cor-de-fundo w-[calc(100vw-18px)] my-2 rounded-2xl shadow-md animate-abrir '
+                : 'bg-verde-insted w-[calc(100vw-18px)] my-2 rounded-2xl shadow-md '
+            }
+          >
             <div className="px-2 py-1">
-              <h1 className="text-2xl  font-bold text-white ">Informações pessoais</h1>
+              <h1
+                className={
+                  isToogle
+                    ? 'text-verde-texto text-2xl  font-bold '
+                    : 'text-cor-de-fundo text-2xl  font-bold '
+                }
+              >
+                Informações pessoais
+              </h1>
             </div>
-            <div className="flex justify-center">
-              <img src="/images/seta-baixo.png" className="w-10 p-2 " />
-            </div>
+            {isToogle && (
+              <div className="flex flex-col p-4 text-md rounded-2xl leading-7 py-2 w-full justify-center animate-aparecer">
+                <div className="flex flex-col justify-start">
+                  <h3 className="text-xl px-1 ">Nome :</h3>
+                  <p className="flex justify-center items-center font-semibold text-verde-texto p-2 w-full rounded-2xl my-1  bg-verde-insted-icon">
+                    Pedro Henrique Souza de Almeida
+                  </p>
+                </div>
+                <div className="flex flex-row justify-start items-center">
+                  <h3 className=" text-xl px-1 whitespace-nowrap">Data de nascimento :</h3>
+                  <p className="flex justify-center items-center font-semibold text-verde-texto p-2 w-full rounded-2xl my-1  bg-verde-insted-icon">
+                    21/07/01
+                  </p>
+                </div>
+                <div className="flex flex-col">
+                  <h3 className=" text-xl px-1">Telefones :</h3>
+                  <div className="flex flex-row  justify-around text-center gap-1">
+                    <div className="flex justify-center items-center font-semibold text-verde-texto p-2 rounded-2xl my-1 w-full bg-verde-insted-icon">
+                      <p>(67) 9.9235 - 9356</p>
+                    </div>
+                    <div className="flex justify-center items-center font-semibold text-verde-texto p-2 rounded-2xl my-1 w-full bg-verde-insted-icon">
+                      <p>(67) 9.9235 - 9356</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-row justify-start items-center">
+                  <h3 className=" text-xl px-1 whitespace-nowrap">E-mail :</h3>
+                  <p className="flex justify-center items-center font-semibold text-verde-texto p-2 w-full rounded-2xl my-1 bg-verde-insted-icon">
+                    p.almeida@live.com
+                  </p>
+                </div>
+              </div>
+            )}
+            <button onClick={() => setToogle(!isToogle)} className="w-full flex justify-center">
+              {isToogle ? (
+                <img src="/images/seta-baixo-verde_escuro.png" className="w-10 p-2 " />
+              ) : (
+                <img src="/images/seta-baixo.png" className="w-10 p-2 " />
+              )}
+            </button>
           </section>
           <section className=" bg-verde-insted w-[calc(100vw-18px)] my-2 rounded-2xl shadow-md">
             <div className="px-2 py-1">
