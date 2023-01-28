@@ -18,14 +18,14 @@ export default function Avisos() {
       >
         <SwiperSlide className="flex justify-center px-2 ">
           <img
-            src="/images/painel-infos.jpg"
+            src="/images/painel-infos.png"
             alt="Painel de informação"
             className=" rounded-2xl w-full h-sull object-cover"
           />
         </SwiperSlide>
         <SwiperSlide className=" flex justify-center px-2 ">
           <img
-            src="/images/painel-infos.jpg"
+            src="/images/painel-infos.png"
             alt="Painel de informação"
             className=" rounded-2xl  w-full h-sull object-cover"
           />
