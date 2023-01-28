@@ -12,7 +12,7 @@ export default function Avisos() {
         pagination={pagination}
         loop={true}
         spaceBetween={5}
-        autoplay={{ delay: 3500, disableOnInteraction: false, waitForTransition: true }}
+        autoplay={{ delay: 5000, disableOnInteraction: false, waitForTransition: true }}
         speed={600}
         slidesPerView={1.075}
       >
